@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper,germanpar]{article}
-\usepackage{german,anysize,eurosym,tabu}
+\usepackage{german,anysize,eurosym,tabu,enumitem}
 %\usepackage[T1]{fontenc}
 \usepackage{helvet}
 %\usepackage{mathphv}
@@ -9,7 +9,11 @@
 
 \renewcommand{\arraystretch}{1.5}
 
-\marginsize{2.0cm}{2.0cm}{1.5cm}{1.5cm}
+\setlist[itemize]{topsep=0.1pt,itemsep=-0.8ex,partopsep=0.1ex,parsep=1ex}
+\setlist[description]{topsep=0.1pt,itemsep=-0.8ex,partopsep=0.1ex,parsep=1ex}
+\setlist[enumerate]{topsep=0.1pt,itemsep=-0.8ex,partopsep=0.1ex,parsep=1ex}
+
+\marginsize{1.8cm}{1.8cm}{1.5cm}{1.5cm}
 \setlength{\footnotesep}{5mm}
 
 \hyphenation{NSpF}
@@ -17,7 +21,7 @@
 
 \author{Bj"orn~Rabenstein\\ bjoern@rabenste.in}
 \title{Hausregeln f"ur
-  \textsc{Midgard} (4. Auflage)\\Version 2.11}
+  \textsc{Midgard} (4. Auflage)\\Version 2.12}
 
 \begin{document}
 
@@ -69,11 +73,8 @@ Nachvollziehbarkeit rechtfertigen, nicht jedoch mit einem Gewinn an
 "`Realismus"'.
 
 Diese Klarstellungen, Änderungen und Ergänzungen der offiziellen
-\textsc{Midgard}-Regeln sind den Erfahrungen un\-zäh\-liger Midgardsitzungen
-seit 1987 entwachsen, insbesondere denen meiner in unterschiedlichen
-Zusammensetzungen seit 1989 mehr oder weniger regelmäßig tagenden
-"`Hauptrunde"', in der ich häufig die Aufgabe des Spielleiters
-übernommen habe. Aufgeschrieben wurden sie von mir, aber ich hege die
+\textsc{Midgard}-Regeln sind den Erfahrungen un\-zäh\-liger Sitzungen
+seit 1987 entwachsen. Aufgeschrieben wurden sie von mir, aber ich hege die
 Hoffnung, daß sie dem Gruppenkonsens Ausdruck verleihen.
 
 Seit Version~2.0 beziehen sich diese Hausregeln auf die 4.~Auflage des
@@ -88,7 +89,10 @@ Begriff \emph{Figur} (als "`altdeutsche"' Version von englisch
 jüngeren \textsc{Midgard}-Auflagen irgendwie der Vergessenheit anheim
 gefallen, erfreut sich hier aber noch reger Benutzung. Also: SpF =
 Spielerfigur = \emph{player character} = PC = "`Abenteurer"' =
-"`Held"'. NSpF = Nichtspielerfigur = \emph{non-player character} = NPC.
+"`Held"'. NSpF = Nichtspielerfigur = \emph{non-player character} =
+NPC. Die Schreibweise \textsc{Midgard} bezieht sich auf das
+Regelsystem, während die Spielwelt \emph{Midgard} als Midgard
+bezeichnet wird.
 
 
 \section{Druckfehler}
@@ -345,7 +349,7 @@ Kontrolle bleibt beim Spielleiter.
   kämpfen noch zaubern können. ZEP und KEP fließen auf hohen Graden
   reichlich, aber es bleibt bei 5~AEP für die Anwendung allgemeiner
   Fertigkeiten. Die PP können hier für einen gewissen Ausgleich
-  sorgen. Mit der 4.~Auflage der Midgard-Regeln wurde das
+  sorgen. Mit der 4.~Auflage der \textsc{Midgard}-Regeln wurde das
   PP-System neu geregelt. Dabei wurde allerdings das Gleichgewicht
   zu Ungunsten der allgemeinen Fertigkeiten verschoben. Mit dieser
   Hausregel hat es der Spielleiter in der Hand, für Ausgleich zu sorgen.}
@@ -406,7 +410,13 @@ SpF dabei gleichzeitig ad"aquate Gegenleistung zu bieten.
     flexible Regelungen beim Lernen ohne Probleme m"oglich. Spieler,
     die solche gutm"utigen Regelungen massiv zum eigenen
     spieltechnischen Vorteil auszunutzen, m"ussen sich fragen lassen,
-    ob sie geeignet sind, einen Priester zu spielen. -- Oxymanos, der
+    ob sie geeignet sind, einen Priester zu spielen.}\\
+  \hline
+\end{tabular}
+
+\begin{tabular}{|p{16.5cm}|}
+  \hline
+  \textbf{Beispiel:} \emph{\small Oxymanos, der
     Magier, m"ochte einen m"achtigen Zauber lernen, den ihm niemand aus
     seiner Gilde in Chryseia beibringen kann. Nach einigen Recherchen findet er
     heraus, da"s es in Candranor einen Lehrmeister gibt, der diesen
@@ -420,7 +430,8 @@ SpF dabei gleichzeitig ad"aquate Gegenleistung zu bieten.
     auf, ihn zu finden. Nach einem l"angeren Abenteuer gelingt es
     ihnen, den Magier aus der Gefangenschaft eines Tegarenstammes zu
     befreien. Dankbar erkl"art er sich bereit, Oxymanos kostenlos den
-    begehrten Zauberspruch zu lehren.}\\
+    begehrten Zauberspruch zu lehren.
+}\\
   \hline
 \end{tabular}
 
@@ -680,11 +691,11 @@ Zauberspr"uche usw. entwickelt werden.
 
 \subsection{Schicksalsgunst}
 
-Schicksalsgunst kann nicht nur zur Wiederholung eigener EW oder WW
-genutzt werden, sondern auch zur Wiederholung gegnerischer EW oder WW,
-sofern sie direkt gegen die betroffene SpF eingesetzt werden. (Die
-Regeln erlauben dies eigentlich nicht, aber das Beispiel auf
-[DFR\,161] legt das Gegenteil nahe.)
+Gemäß Korrektur in der 2. Auflage von [DFR\,291] (die aber nicht in
+den Errata erwähnt wird) kann Schicksalsgunst auch zur Wiederholung
+eines gegen die SpF gerichteten \textbf{EW:Meucheln} genutzt werden.
+(Das Beispiel auf [DFR\,161] legte das auch schon in der 1. Auflage
+nahe.)
 
 Wird Schicksalsgunst benutzt, um die EW für einen gezielten Schuß zu
 wiederholen, werden immer \emph{beide} EW (nach Einsetzem eines
@@ -737,15 +748,25 @@ Handlung kann im Nachhinein \textbf{nicht mehr ge"andert} werden (mit
 der Ausnahme einiger spezieller Situationen, in denen die Regeln dies
 explizit erlauben). Allerdings ist es m"oglich, auf die Ausübung der
 angesagten Handlung zu \textbf{verzichten}, wenn man an der Reihe
-ist. (Manchmal hat man auch gar keine andere Wahl\dots)
+ist. (Manchmal hat man auch gar keine andere Wahl\dots) Außerdem ist
+zu beachten, daß prinzipiell nur die \textbf{Art der Handlung} vorab
+ausgewählt werden muß (was zumeist der Auswahl einer der mit
+Buchstaben versehenen Optionen in [DFR\,220f] entspricht). Details
+können dann spontan und durchaus in Reaktion auf das zuvor Geschehene
+gewählt werden (z.\,B. das Ziel eines Angriffs, die zu ziehende Waffe
+oder Auswahl und Ziel eines Zaubers).
+% Letzteres folgt einer JEF-Äußerung, daß beim Fechten das Ziel des
+% zweiten Angriffs spontan gewechselt werden kann, z.B. wenn das
+% ursprüngliche Ziel bereits kampfunfähig ist.
 
-Wird ein Effekt ausgelöst, der eine bestimmte Zeitdauer anhält, so
-wird diese in der Regel erst vom Beginn der nächsten Runde an
-gemessen, auch wenn der Effekt sofort einsetzt. Wird eine Figur also
-beispielsweise für eine Runde bewußtlos, so ist sie für den Rest der
-laufenden Runde und für die gesamte folgende Runde ausgeschaltet.
+Wird durch eine Handlung ein Effekt ausgelöst, der eine bestimmte
+Zeitdauer anhält, so wird diese in der Regel erst vom Beginn der
+nächsten Runde an gemessen, auch wenn der Effekt sofort einsetzt. Wird
+eine Figur also z.\,B. durch einen Fausthieb für eine Runde bewußtlos,
+so ist sie für den Rest der laufenden Runde und für die gesamte
+folgende Runde ausgeschaltet.
 
-Beide Anmerkungen unterstreichen die Wichtigkeit von Angriffs-
+Obige Anmerkungen unterstreichen die Wichtigkeit von Angriffs-
 bzw. Handlungsrang (und damit von Gw bzw. deren Reduzierung durch
 schwere Rüstungen). Bei \textbf{sekundengenau} simulierten
 Handlungsabläufen gelten diese Anmerkungen nicht mehr. Die Gw spielt
@@ -756,13 +777,15 @@ Ausnahme darstellen. Dem Spielleiter sollte klar sein, daß sie ihm
 läßt sich mit ähnlich viel Regelimprovisation (aber weniger Aufwand)
 eine Situation auch rundenweise befriedigend abhandeln.
 
-\subsection{Rüstungschutz}
-
-Die Beschränkung des Rüstungsschutzes gegen Armbrüste, Langbögen und
-Kompositbögen [DFR\,97] gilt nur bei Metallplatten (die durch derartige
-Geschosse durchschlagen werden). Bei ausreichend anderer Art der Rüstung
-(z.\,B. bei manchen natürlichen Rüstungen) gilt auch bei diesen Schußwaffen
-der normale Rüstungsschutz.
+% Folgender Absatz gestrichen wegen eindeutiger Aussage JEFs.
+%
+% \subsection{Rüstungschutz}
+% 
+% Die Beschränkung des Rüstungsschutzes gegen Armbrüste, Langbögen und
+% Kompositbögen [DFR\,97] gilt nur bei Metallplatten (die durch derartige
+% Geschosse durchschlagen werden). Bei ausreichend anderer Art der Rüstung
+% (z.\,B. bei manchen natürlichen Rüstungen) gilt auch bei diesen Schußwaffen
+% der normale Rüstungsschutz.
 
 \subsection{Improvisierte Waffen}
 
@@ -802,16 +825,6 @@ in der freien Hand bereitgehalten werden.
 
 \subsection{Auswirkungen und Heilung von erlittenem Schaden}
 
-Eine Figur mit \textbf{0\,AP} [DFR\,101] erh"alt \textbf{WM--4} nicht
-nur auf EW:Angriff, sondern auch auf alle EW und WW, die mit
-\textbf{starker k"orperlicher Anstrengung} verbunden sind. WW, bei
-denen die dahinterstehende Handlung sehr einer Abwehr gleicht, können
-auch ganz verfallen.
-
-Eine lebensgef"ahrlich verwundete Figur (die also i.\,d.\,R. 3 oder
-weniger LP hat) verliert automatisch \textbf{alle AP} und regeneriert
-keine AP, solange sie als lebensgef"ahrlich verwundet z"ahlt.
-
 Die Nachteile, die eine Figur erleidet, wenn sie mindestens die Hälfte
 ihrer LP verloren hat bzw. nur noch über 3 oder weniger LP verfügt,
 gelten grundsätzlich nur für \textbf{Lebewesen}. Insbesondere Untote
@@ -824,6 +837,20 @@ Lebewesen sind, muß entsprechend angepaßt werden. (Beispielsweise wird
 eine Skelett durch eine Augen- oder Wirbelsäulenverletzung in keinster
 Weise beeinträchtigt. Allerdings hat auch ein Skelett einen kritischen
 Punkt, der es beim Würfeln einer 100 einfach zusammenklappen läßt.)
+
+\subsubsection{AP-Verlust}
+
+Eine Figur mit \textbf{0\,AP} [DFR\,101] erh"alt \textbf{WM--4} nicht
+nur auf EW:Angriff, sondern auch auf alle EW und WW, die mit
+\textbf{starker k"orperlicher Anstrengung} verbunden sind. WW, bei
+denen die dahinterstehende Handlung einer Abwehr gleicht, können
+auch ganz verfallen.
+
+Eine lebensgef"ahrlich verwundete Figur (die also i.\,d.\,R. 3 oder
+weniger LP hat) verliert automatisch \textbf{alle AP} und regeneriert
+keine AP, solange sie als lebensgef"ahrlich verwundet z"ahlt.
+
+\subsubsection{AP-Regenerierung}
 
 AP werden auch durch Schlafphasen, die \textbf{k"urzer} sind
 \textbf{als 4\,h}, regeneriert [DFR\,103]. Die regenerierten AP werden
@@ -838,29 +865,56 @@ tiefer Entspannung und völliger Ruhe AP in reduzierter Geschwindigkeit
 regeneriert werden (und zwar mehr als die 2\,AP, die in [DFR\,103]
 zugestanden werden).
 
+\subsubsection{Kritischer Schaden}
+
+Klarstellungen zur Tabelle 4.5 \emph{Kritischer Schaden} [DFR\,246f]:
+
+\begin{description}
+\item[11--20:] \emph{Schock.} Wirkt sich wie der Schock nach einem
+  Peitschenhieb aus, also Bewegungs- und Handlungsunfähigkeit, und
+  zwar für den Rest der laufenden Runde bis zum Ende der
+  folgenden. Vgl. Abschnitt \ref{timing} und Anhang \ref{behindert}.
+\item[56--64:] \emph{Verletzung am rechten Bein.} Die getroffene Figur
+  \textbf{stürzt} mangels Abstützmöglichkeit \textbf{zu Boden} (und
+  verliert damit ihre ggf. noch verbleibende Handlung [DFR\,88]). Sie
+  kann mit \textbf{B4} kriechen, aber ohne Abstützmöglichkeit nicht
+  aufrecht stehen oder gehen. Sie kann wie ein \textbf{Liegender}
+  kämpfen, ist aber natürlich weiterhin \textbf{wehrlos}.
+\item[94--96:] \emph{Halstreffer.} Bei einer Verletzung der
+  Halsschlagader verliert die getroffene Figur zudem das Bewußtsein,
+  bis die Blutung gestillt wurde.
+\end{description}
+
+\subsubsection{Behandlung ernster Verletzungen}
+
 Bei der magischen Behandlung von \textbf{schweren Verletzungen} oder
 den Folgen von \textbf{kritischen Treffern} reduziert jeder durch die
 Behandlung geheilte LP die ausgew"urfelte Dauer der schweren
 Verletzung um \textbf{einen Tag}. Dies gilt sogar für LP, die dem
 Verzauberten wegen Erreichen des LP-Maximums gar nicht gutgeschrieben
-werden konnten. Davon unbeschadet bleibt die Möglichkeit, durch
+werden können. Davon unbeschadet bleibt die Möglichkeit, durch
 separate Anwendung von \emph{Allheilung} in einem Zauberduell die
-Folgen derartiger Verletzungen direkt zu beseitigen [ARK\,85]. Die
-Restgenesungsdauer kann weiterhin duch Zauber wie
-\emph{Blutmeisterschaft} und \emph{den Klängen der Genesung} verkürzt
-werden. Ausdrücklich ausgenommen von dieser Regelung ist allerdings
-die \emph{Wundrune} (deren Vorteil darin besteht, daß sie beliebig
-häufig hintereinander angewendet werden kann, was aber nicht zur
-vollständigen Beseitung der Folgen oben genannter Verletzungen in
+Folgen ernster Verletzungen direkt zu beseitigen [ARK\,85], wobei
+hier vor dem Zaubern entschieden werden muß, ob 2W6 LP geheilt werden
+sollen (mit den oben beschriebenen Auswirkungen auf die Heildauer)
+oder ob die langanhaltenden Folgen einer Verletzung direkt beseitigt
+werden sollen (wobei dann keine LP geheilt werden).
+
+Die Restgenesungsdauer ernster Verletzungen kann weiterhin duch Zauber
+wie \emph{Blutmeisterschaft} und den \emph{Klängen der Genesung}
+verkürzt werden. Ausdrücklich ausgenommen von dieser Regelung ist
+allerdings die \emph{Wundrune} (deren Vorteil darin besteht, daß sie
+beliebig häufig hintereinander angewendet werden kann, was aber nicht
+zur vollständigen Beseitung der Folgen oben genannter Verletzungen in
 wenigen Stunden mißbraucht werden soll).
 
-\emph{Anmerkung: Diese Regelung gab es in ähnlicher Art bereits in den
-  Hausregeln zu M3. Allerdings hat M4 dann recht eindeutig
-  klargestellt, daß sie nicht den Absichten der M4-Autoren entspricht,
-  weshalb wir sie entfernt haben. Ironischerweise hat dann aber M5 das
-  Heilen schwerer Verletzungen erleichtert (indem dies nun mit
-  \emph{Heilen schwerer Wunden} möglich ist). Dies war Anlaß genug,
-  unsere alte Hausregel wiederzubeleben.}
+% \emph{Anmerkung: Diese Regelung gab es in ähnlicher Art bereits in den
+%   Hausregeln zu M3. Allerdings hat M4 dann recht eindeutig
+%   klargestellt, daß sie nicht den Absichten der M4-Autoren entspricht,
+%   weshalb wir sie entfernt haben. Ironischerweise hat dann aber M5 das
+%   Heilen schwerer Verletzungen erleichtert (indem dies nun mit
+%   \emph{Heilen schwerer Wunden} möglich ist). Dies war Anlaß genug,
+%   unsere alte Hausregel wiederzubeleben.}
 
 \subsection{Gezielte Angriffe}
 
@@ -943,23 +997,33 @@ Gegner m"oglich. (Davon unbeschadet bleibt die M"oglichkeit des
 
 \subsubsection{Fernkampf}
 
+Die Fertigkeit \emph{Werfen} [DFR\,208] kann \emph{nicht für gezielte
+  Würfe} benutzt werden.
+
 Da gezielte Schüsse und Würfe immer auf wehrlose Figuren erfolgen
 [DFR\,249], erlangt man dabei niemals KEP. Allerdings können AEP
 vergeben werden als wenn der Gegner "`kampflos"' überwunden wurde.
 
 Auch im Fernkampf gilt, da"s mindestens 1\,LP Schaden angerichtet
 werden mu"s, um beim Opfer kritischen Schaden hervorzurufen. Dies gilt
-sogar bei einem kritischen Erfolg, der die in [DFR\,250] beschrieben
+sogar bei einem kritischen Erfolg, der die in [DFR\,250] beschriebenen
 Auswirkungen hat, aber nicht erm"oglicht, kritischen Schaden ohne
 LP-Verlust anzurichten.
 
 Auch im Fernkampf gilt, da"s ein gezielter Schu"s bzw. Wurf nur dann
-augenblicklick t"odlich sein kann, wenn prinzipiell die Möglichkeit
+augenblicklich t"odlich sein kann, wenn prinzipiell die Möglichkeit
 dazu besteht, der Schütze von dieser Möglichkeit weiß \emph{und}
 mindestens 1\,LP Schaden angerichtet wird. Zusätzlich muß bei beiden
 EW mindestens eine 30 erreicht werden. Ein Ergebnis zwischen 25 und 29
-richtet "`nur"' passenden kritischen Schaden an (im Geiste des
-Beispiels [DFR\,250]).
+richtet "`nur"' passenden kritischen Schaden an, wie das im Beispiel
+[DFR\,250] auch schon angedeutet ist. Zur Inspiration: Ein tödlicher
+Schuß oder Messerwurf wird zu "`21--35: Rumpftreffer mit Gefahr
+innerer Verletzungen"'. Ein tödlicher Schuß in den Hals wird zu
+"`94--96: Halstreffer"'. Mit einer Schleuder, Wurfkeule oder ähnlich
+stumpfen Fernwaffen ist ein augenblicklicher Tod eher nicht gezielt zu
+erreichen. Bei einer erreichten 30 wäre aber "`97: Schwere
+Schädelverletzung"' eine passende Auswirkung, die bei 25--29 zu
+"`74--80: Kopftreffer"' abgemildert wird.
 
 Der in [BES\,60] beschriebene gezielte Fernkampfangriff auf die
 verwundbare Stelle eines Drachens ist entsprechend auch nur möglich,
@@ -968,6 +1032,17 @@ weiß. Für einen direkt tödlichen Schuß ist noch genauere Kenntnis
 nötig.
 
 \subsection{Spezielle Kampftechniken}
+
+\subsubsection{Konzentrierte Abwehr}
+
+Ein \emph{Wehrloser} kann niemals konzentriert abwehren (auch nicht
+mit einem großen Schild).
+
+Wird eine konzentrierte Abwehr durchgeführt, betrifft die negative WM
+\textbf{alle eigenen EW:Angriff und äquivalente EW} der laufenden
+Runde mit Ausnahme der in Abschnitt \ref{kombi} in Gruppe
+\ref{i:zusatz} genannten Zusatzangriffe. (Für \emph{Fechten} ist
+das ausdrücklich in [DFR\,140] geregelt.)
 
 \subsubsection{Zurückdrängen}
 
@@ -979,8 +1054,7 @@ gelungene Nahkampfangriff dem Gegner mindestens 1\,AP geraubt haben.
 Man beachte, daß eine im Handgemenge \textbf{Festgehaltener} zwar
 "`weitgehend handlungsunfähig"' ist [DFR\,239], dies aber nichts über
 ihre Fähigkeit zur \emph{Abwehr} aussagt (was ja formal keine
-Handlung ist). Die Situation eines Festgehaltenen entspricht der Stufe
-2a in der Tabelle zur Handlungsunfähigkeit am Ende dieser Hausregel.
+Handlung ist, vgl. Anhang \ref{behindert}).
 
 \subsubsection{Peitsche}
 
@@ -1032,6 +1106,7 @@ Wehrlosigkeit und Bewußtlosigkeit vgl. Abschnitt~\ref{timing}.
 
 
 \subsubsection{Kombination spezieller Angriffsweisen}
+\label{kombi}
 
 \begin{tabular}{|p{16.5cm}|}
   \hline
@@ -1098,13 +1173,13 @@ Die speziellen Angriffsweisen lassen sich in Gruppen einteilen:
   [DFR\,220f] erfordern: Konzentrierte Abwehr (2f), den Gegner zu Fall
   bringen (2g), ein Handgemenge einleiten (2h). Diese Aktionen sind
   einfach keine normalen Angriffe und können daher nicht durch
-  Angriffsweisen aus Gruppe \ref{i:ersatz} ersetzt werden. Während
-  einer konzentrierten Abwehr gilt allerdings ausdrücklich, daß durch
-  Einsatz von \emph{Fechten} ein Zusatzangriff durchgeführt werden
-  kann (siehe Erklärung [DFR\,140]). Analog ist ein Zusatzangriff mit
-  einer Parierwaffe gestattet. Andersherum lassen sich die
-  Zusatzangriffe aus Gruppe \ref{i:zusatz} aber nicht erschweren, um
-  einen Vorteil für die Abwehr zu erhalten.
+  Angriffsweisen aus Gruppe \ref{i:ersatz} ersetzt
+  werden. Zusatzangriffe aus Gruppe \ref{i:zusatz} sind aber weiterhin
+  möglich, wenn das ihre jeweilige Regel gestattet. Bei einer
+  konzentrierten Abwehr gilt z.\,B. ausdrücklich, daß durch Einsatz
+  von \emph{Fechten} ein Zusatzangriff durchgeführt werden kann
+  [DFR\,140]. Analog ist ein Zusatzangriff mit einer Parierwaffe
+  gestattet.
 \end{enumerate}
 
 Zu beachten ist, daß ein \emph{Sturmangriff} keine spezielle
@@ -1206,6 +1281,44 @@ WW:Resistenz zusammentrifft, bleibt es bei der Verdopplung, die aus
 dem kritischen Erfolg beim EW:Zaubern resultiert. Es wird keine
 weitere Verdopplung für den kritischen Fehler beim WW:Resistenz
 vorgenommen.
+
+\subsection{Räumliches Bezugssystem}
+
+Bei manchen Zaubern ist das räumliche Bezugssystem nicht leicht zu
+bestimmen. Nehmen wir an, ein Zauberer ist in geeigneter Weise auf
+einem schnell dahinfahrenden Wagen angegurtet und zaubert nun eine
+\emph{Feuerkugel} oder gar \emph{Auflösung}. Man könnte nun die
+Bewegung der enstehenden Feuerkugel (B3) bzw. Auflösungssphäre (B12)
+relativ zum Erdboden verstehen, so daß der Zauberer sie mit großer
+Relativgeschwindigkeit auf einen Verfolger lenken könnte. Die Bewegung
+der magischen Kugeln geschieht jedoch zunächst erstmal relativ zum
+Bezugssystem des Zauberers, jedenfalls solange dieser "`passiv"'
+mitbewegt wird (wie im Beispiel durch den Wagen -- die Kugeln würden
+also dem Wagen folgen und können relativ zum Wagen nur mit B3 bzw. B12
+bewegt werden). Sollte der Zauberer sich allerdings "`aktiv"' bewegen
+(was bei diesen Zaubern nur mit B1 geht, weil sonst die Konzentration
+gebrochen würde und die Feuerkugel explodieren bzw. die
+Auflösungssphäre implodieren würde), so bewegt er sich selbst relativ
+zu dem Bezugssystem, das für die Bewegung von Feuerkugel
+bzw. Auflösungssphäre relevant ist. (So ergibt sich, daß sich der
+Zauberer maximal mit B4 von der Feuerkugel entfernen kann -- die B3
+der Feuerkugel plus die eigene B1.)
+
+Dieses Prinzip ist jedoch nicht auf alle Zauber uneingeschränkt
+anwendbar. Eine \emph{Steinkugel} interagiert z.\,B. viel stärker mit
+der physikalischen Umgebung als eine \emph{Feuerkugel}. Sie würde
+sich anfänglich zwar auch mit dem Zauberer bewegen, so daß sie
+zunächst auf dem Wagen ruhen und nicht von sich aus von der
+Ladefläche rollen würde. Ließe sie der Zauberer aber bewußt von der
+Ladefläche rollen (oder zauberte er sie von Anfang an so, daß sie
+neben der Ladefläche entstünde und dann zu Boden fiele), dann würde
+sie durch die Reibung mit dem Boden schnell ihre
+Anfangsgeschwindigkeit verlieren. Der Zauberer könnte sie dann in der
+Tat mit B12 relativ zum Erdboden einem Verfolger entgegenrollen
+lassen.
+
+% Siehe Klarstellung von Elsa: http://www.midgard-forum.de/forum/threads/6665-R%C3%A4umlicher-Bezugspunkt-f%C3%BCr-Magie
+
 
 \subsection{Sekundengenaue Handlungsabläufe}
 
@@ -1379,7 +1492,7 @@ angerechnet, nicht aber beim Einsatz als Lichtpfeile. Der
 Schadensbonus wird nur beim Einsatz als Thaumagralzauber
 angerechnet. Beim Thaumagralzauber sind keine Rundumschläge wie mit
 dem Lichtschwert möglich. Beim Rundumschlag mit dem Lichtschwert
-werden keine WM:-4 angerechnet, und der Schlag findet zum normalen
+werden keine WM--4 angerechnet, und der Schlag findet zum normalen
 Zeitpunkt gemäß Angriffsrang statt. (Der Waffenrang des Lichtschwertes
 ist 0.) Generell wird das Lichtschwert auch nicht zweihändig geführt,
 so daß keine WM-2 auf den WW:Abwehr angerechnet werden.
@@ -1444,7 +1557,7 @@ Der Runenstab \textbf{Wasserstrahl} wirkt nur solange, wie der
 Anwender den Runenstab in der Hand behält und sich auf den Strahl
 konzentriert.
 
-Die \emph{Wundrune} ist von der Regelung zur Behandlung tödlich
+Die \textbf{Wundrune} ist von der Regelung zur Behandlung tödlich
 Verwundeter ausgenommen [DFR\,102]. Gewissermaßen wird der größte Teil
 der Zauberdauer bei der Wundrune durch die Vorbereitung eingenommen,
 bei der der Verzauberte zwar zugegen sein muß, aber sich noch nicht
@@ -1454,8 +1567,7 @@ entfaltet seine Wirkung. Ist die zu verzaubernde Figur zu diesem
 Zeitpunkt bereits tot, hilft der Zauber nicht mehr. Zum Ausgleich kann
 eine Wundrune (im Gegensatz zu den normalen Heilzaubern) beliebig
 häufig hintereinander eingesetzt werden. (Siehe auch oben die
-Einschränkungen bei der Heilung schwerer Verletzungen.)
-
+Einschränkungen bei der Heilung ernster Verletzungen.)
 
 Das Zaubersiegel \textbf{Zauberschlo"s} verschwindet, sobald es zu
 wirken anf"angt.
@@ -1529,38 +1641,39 @@ ca. 24\,GS wert (irdischer Wert: In den 1990ern um 150\,\euro, 2009 um
 Gold, 40\,\%\ Silber), sind ca. 160\,GS wert. Das Silber davon hat
 einen Wert von ca. 10\,GS, bleiben f"ur das Gold 150\,GS. Allerdings
 wird das Gold durch Aufreinigung wertvoller. "`Normales"'
-\textbf{Handelsgold} hat einen Goldanteil von ca. 90\,\%. 1\,kg dieses
-Goldes aus einer in irgendeiner Form zertifizierten Quelle hat einen
-Wert von gut \textbf{250\,GS}. Hochaufgereinigtes und als solches
-zertifiziertes Feingold (\textbf{Alchimistengold}) hat einen Wert von
-mindestens \textbf{500\,GS je kg}. (Zum Vergleich: Der irdische
-Goldpreis unterliegt starken Schwankungen, bedingt durch Spekulation,
-wechselnde Bestrebungen, Währungen durch Gold zu decken, und vieles
-mehr.  In den 1950er und 1960er Jahren lag der Goldpreis recht stabil
-bei knapp 3.000\,\euro/kg. Nachdem die Golddeckung des US-\$
-aufgegeben wurde, schwankte der Preis extrem stark mit dem vorläufigen
-H"ohepunkt Anfang 1980 bei fast 25.000\,\euro/kg. Nach einer Talsohle
-bei etwa 8.000\,\euro/kg in den 1990ern erreichte der Goldkurs Ende
-2009 fast wieder seinen Rekordkurs (wobei all diese Zahlen nicht
-inflationsbereinigt sind).) Stellt man sich vor, da"s ein GS etwa
-einem Gegenwert von 10\,\euro\ entspricht, so erh"alt man (bezogen auf
-die irdischen 1990er Jahre) einen Goldpreis, der leicht unter dem
-irdischen liegt, und einen Silberpreis, der leicht "uber dem irdischen
-liegt, eine Relation, die im Hinblick auf die Aussage, da"s Gold auf
-\textsc{Midgard} h"aufiger ist als auf der Erde, durchaus konsistent
-erscheint. Allerdings ist mit derartigen Vergleichen "au"serst
-vorsichtig umzugehen. Die Rolle des Geldes in einer altert"umlichen
-Fantasywelt ist nur sehr bedingt vergleichbar mit der, die es in
-unserer heutigen Welt spielt. In einer bestimmten Situation kann die
-Kaufkraft eines GS der eines einzigen Euro (oder noch weniger,
-schlie"slich kann man weder Geld noch Gold essen) entsprechen oder
-auch der von 100\,\euro.
+\textbf{Handelsgold} hat einen Goldanteil von ca. 90\,\% (was dem auf
+der Erde häufig verwendeten 22-karätigem Münzgold entspricht). 1\,kg
+dieses Goldes aus einer in irgendeiner Form zertifizierten Quelle hat
+einen Wert von gut \textbf{250\,GS}. Hochaufgereinigtes und als
+solches zertifiziertes Feingold (\textbf{Alchimistengold}) hat einen
+Wert von mindestens \textbf{500\,GS je kg}. (Zum Vergleich: Der
+irdische Goldpreis unterliegt starken Schwankungen, bedingt durch
+Spekulation, wechselnde Bestrebungen, Währungen durch Gold zu decken,
+und vieles mehr.  In den 1950er und 1960er Jahren lag der Goldpreis
+recht stabil bei knapp 3.000\,\euro/kg. Nachdem die Golddeckung des
+US-\$ aufgegeben wurde, schwankte der Preis extrem stark mit dem
+vorläufigen H"ohepunkt Anfang 1980 bei fast 25.000\,\euro/kg. Nach
+einer Talsohle bei etwa 8.000\,\euro/kg in den 1990ern erreichte der
+Goldkurs Ende 2009 fast wieder seinen Rekordkurs (wobei all diese
+Zahlen nicht inflationsbereinigt sind).) Stellt man sich vor, da"s ein
+GS etwa einem Gegenwert von 10\,\euro\ entspricht, so erh"alt man
+(bezogen auf die irdischen 1990er Jahre) einen Goldpreis, der leicht
+unter dem irdischen liegt, und einen Silberpreis, der leicht "uber dem
+irdischen liegt, eine Relation, die im Hinblick auf die Aussage, da"s
+Gold auf Midgard h"aufiger ist als auf der Erde, durchaus
+konsistent erscheint. Allerdings ist mit derartigen Vergleichen
+"au"serst vorsichtig umzugehen. Die Rolle des Geldes in einer
+altert"umlichen Fantasywelt ist nur sehr bedingt vergleichbar mit der,
+die es in unserer heutigen Welt spielt. In einer bestimmten Situation
+kann die Kaufkraft eines GS der eines einzigen Euro (oder noch
+weniger, schlie"slich kann man weder Geld noch Gold essen) entsprechen
+oder auch der von 100\,\euro.
 
 
 
 \subsection{Sex, Liebe, Leidenschaft\dots}
 Mit der 4.~Auflage des Regelwerks sind die Stellen, die den Eindruck erwecken,
-als ob \textsc{Midgard} nur Heterosexulit"at kenne, deutlich weniger geworden,
+als ob \textsc{Midgard} nur Heterosexualit"at kenne, deutlich weniger geworden,
 aber leider noch nicht ganz verschwunden (z.\,B. [DFR\,32], [ARK\,179],
 [BES\,323]). So ist jetzt etwas klarer, daß es natürlich auch Homo- und
 Bisexualit"at (und wohl auch Asexualit"at) gibt. Wenn derartige
@@ -1602,6 +1715,7 @@ sexuelle Orientierung handelt, wenn die Umst"ande entsprechend extrem sind.
 \section*{Anhang}
 
 \section{Handlungsunf"ahigkeit und Wehrlosigkeit}
+\label{behindert}
 
 Abwehr ist regeltechnisch keine Handlung. Handlungsunf"ahigkeit und
 Wehrlosigkeit sind daher unterschiedliche Konzepte, auch wenn in der
@@ -1627,7 +1741,8 @@ auf diesen beiden Achsen eingeordnet sind.
 \begin{table}[htbp]
 {\footnotesize
   \begin{center} 
-    \begin{tabu}{|p{2.4cm}||p{4.5cm}|p{4.3cm}|p{4.4cm}|}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabu}{|p{2.4cm}||p{4.3cm}|p{4.1cm}|p{4.5cm}|}
       \hline
       Einschränkung der & \multicolumn{3}{c|}{Einschränkung der Handlungsfähigkeit}\\
       Abwehrbereitschaft & keine & WM--4 auf Angriff & keine Handlung \\
@@ -1641,7 +1756,7 @@ auf diesen beiden Achsen eingeordnet sind.
       \begin{itemize}
       \item spontaner Angriff
       \item Rundumschlag
-      \item Opfer hat weniger als die Hälfte LP (WM--2)
+      \item Opfer hat mindestens die Hälfte der LP verloren (WM--2)
       \end{itemize} & 
       \begin{itemize}
       \item w"ahrend 30\,min (bzw. 60\,min) nach kritischem Kopftreffer 74--80
@@ -1653,7 +1768,7 @@ auf diesen beiden Achsen eingeordnet sind.
       WM--4 auf Abwehr &
       \begin{itemize}
       \item Angriff mit zweihändiger Hiebwaffe oder schlagender
-        Stangenwaffe (Abw. WM--2)
+        Stangenwaffe (WM--2)
       \end{itemize}      & 
       \begin{itemize}
       \item überstürzter Angriff (Ang. WM--6, Abw. WM--2)
@@ -1677,7 +1792,7 @@ auf diesen beiden Achsen eingeordnet sind.
       \item Opfer am Boden liegend
       \end{itemize} &
       \begin{itemize}
-      \item Opfer wird im Handgemenge festgehalten (WM+4)
+      \item Opfer wird im Handgemenge festgehalten
       \end{itemize}
       \\
       \hline
@@ -1693,19 +1808,20 @@ auf diesen beiden Achsen eingeordnet sind.
       \end{itemize}& 
       \begin{itemize}
       \item Opfer hat 1-3\,LP (B4)
-      \item Opfer hat 0\,LP (B0)
       \end{itemize}\\
       \hline
       automatischer kritischer Treffer\footnotemark&
       ---&
       ---&
       \begin{itemize}
-      \item v"ollige Bewegungsunf"ahigkeit des Opfers
+      \item Bewegungslosigkeit des Opfers
+      \item Opfer hat 0\,LP (B0)
       \item Opfer bewußtlos
       \item Opfer schläft (vgl. Anmerkungen zu \emph{Schleichen} oben)
       \end{itemize} \\
       \hline
     \end{tabu}
+    \renewcommand{\arraystretch}{1.5}
     \caption{Handlungsunf"ahigkeit und Wehrlosigkeit}
     \label{tab:handlung}
   \end{center}
