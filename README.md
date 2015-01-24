@@ -1,4 +1,4 @@
-# Midgard-Hausregeln
+# Midgard-Hausregel
 
 House rules for the Midgard RPG (in German).
 
