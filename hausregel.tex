@@ -1,0 +1,1362 @@
+\documentclass[10pt,a4paper,germanpar]{article}
+\usepackage{german,anysize,eurosym}
+%\usepackage[T1]{fontenc}
+\usepackage{helvet}
+%\usepackage{mathphv}
+\usepackage[latin1]{inputenc}
+
+\renewcommand{\familydefault}{phv}
+
+\marginsize{2.0cm}{2.0cm}{2.0cm}{2.0cm}
+\setlength{\footnotesep}{5mm}
+
+\hyphenation{NSpF}
+\hyphenation{Re-gel-mo-di-fi-ka-tio-nen}
+
+\author{Bj"orn~Rabenstein\\ b.rabenstein@gmx.de}
+\title{Regelklarstellungen, -änderungen und -ergänzungen f"ur
+  \textsc{Midgard} (4. Auflage)\\Version 2.1}
+
+\begin{document}
+
+\maketitle
+
+%\tableofcontents
+
+\section{Vorwort}
+
+Regeln sind Nebensache im Rollenspiel. In welcher Hinsicht haben
+Regeln "uberhaupt eine Berechtigung? Ein Rollenspiel ist nicht
+realistisch. Manchmal erweckt es den Anschein, realistisch zu sein,
+aber wenn man nur hinreichend genau hinschaut, ist man immer beliebig
+weit von der Realit"at (was auch immer das sein mag) entfernt. Ein
+Rollenspiel hat seine eigene Realit"at. Die Regeln dienen dazu, dem
+daran interessierten Spieler ein Gef"uhl zu geben, welchen Gesetzen
+diese spezielle Realit"at folgt. Sie dient auch dem Spielleiter,
+einsch"atzen zu k"onnen, was die Spieler f"ur eine Erwartung von
+dieser Realit"at haben, um also zu vermeiden, da"s bei den Spielern
+der Eindruck von Willk"ur oder Ungerechtigkeit entsteht. Die
+wichtigste Regel bleibt, da"s der Spielleiter immer recht hat und
+erhaben "uber jede Regel ist. Die hier folgenden Klarstellungen und
+"Anderungen sollen in diesem Sinne lediglich vermeidbare
+"Uberraschungen verhindern, insbesondere bei Spielern, die sich sehr
+auf den gedruckten Regeltext verlassen.
+
+Generell folgen diese Regelerg"anzungen der Philosophie, da"s
+"`echter"' Realismus im obigen Sinne ohnehin nicht m"oglich ist und es
+daher zwecklos ist, mit hochkomplexen Regeln diesem Realismus
+nachzueifern, ohne ihm wirklich n"aher zu kommen, dabei allerdings die
+Spielbarkeit des Systems immer mehr zu untergraben. Insbesondere die
+Kampfregeln sind ein gutes Beispiel daf"ur. Die Regeln sollen hier
+eine anschauliche Methode zur Verf"ugung stellen, K"ampfe spielerisch
+umzusetzen und den SpF taktische Entscheidungen und die Steuerung
+ihrer Kampfhandlungen zu erm"oglichen. Von einer wirklich
+realistischen, detailierten Simulation kann nicht die Rede sein. Daher
+wurde hier gar nicht erst versucht, die Regeln durch erh"ohte
+Komplexit"at "`realistischer"' zu gestalten, sondern nur an den
+wenigen Stellen behutsam einzugreifen, wo es nach subjektivem Eindruck
+an Spielbarkeit, Klarheit, Konsistenz oder Nachvollziehbarkeit
+mangelte. Echte Regelerg"anzungen mu"sten sich mit einem deutlichen
+Gewinn an Spielbarkeit und Spielqualit"at, Konsistenz und
+Nachvollziehbarkeit rechtfertigen, nicht jedoch mit einem Gewinn an
+"`Realismus"'.
+
+Die Kampfregeln verfolgen hier zudem noch das Ziel, SpF m"oglichst
+selten durch einen von ihnen nicht zu verhindernden W"urfelwurf wenig
+glorreich umzubringen, wie das bei Scharfschu"sangriffen aus dem
+Hinterhalt m"oglich ist. Die entsprechenden Regeln f"ur gezielte
+Angriffe wurden daher leicht entsch"arft, auch wenn dies sicher dem
+"`Realismus"' widerspricht. Die ebenfalls nicht sehr realistische
+Alternative w"are es, als Spielleiter den SpF niemals einen wirklichen
+Hinterhalt zu legen, weil die Wahrscheinlichkeit f"ur eine
+frustrierende Form des Ablebens viel zu gro"s ist.
+
+Diese Klarstellungen, Änderungen und Ergänzungen der offiziellen
+Midgardregeln sind den Erfahrungen un\-zäh\-liger Midgardsitzungen
+seit 1987 entwachsen, insbesondere denen meiner in unterschiedlichen
+Zusammensetzungen seit 1989 mehr oder weniger regelmäßig tagenden
+"`Hauptrunde"', in der ich häufig die Aufgabe des Spielleiters
+übernommen habe. Aufgeschrieben wurden sie von mir, aber ich hege die
+Hoffnung, daß sie dem Gruppenkonsens Ausdruck verleihen.
+
+Seit Version~2.0 beziehen sich diese Regelergänzungen auf die
+4.~Auflage des Midgard-Regelwerks. Verweise auf das Regelwerk werden
+in der Form [XXX\,nnn] gegeben, wobei XXX ein Kürzel für das jeweilige
+Buch ist, während nnn die Seitenzahl angibt. Folgende Kürzel finden
+Verwendung: DFR = Das Fantasy-Rollenspiel, ARK = Das Arkanum, KOM =
+Das Kompendium, BES = Das Bestiarium, MDS = Meister der Sphären.
+
+\section{Druckfehler}
+
+Auf offensichtliche Druckfehler, die leicht zu korrigieren sind, wird
+hier nicht weiter eingegangen. Hier werden nur F"alle erw"ahnt, bei
+denen zwar eindeutig ein Druckfehler vorliegt, wo aber nicht ohne
+weiteres klar ist, wie dieser Druckfehler zu verbessern ist.
+
+Die bereits veröffentlichten offiziellen Errata werden als Bestandteil
+der Regeln betrachtet und hier bereits vorausgesetzt.
+
+\begin{itemize}
+\item\ [KOM\,56] In allen vier Tabellen muß jeweils die Zeile
+  "`+7,\,+8,\,+9~\textbf{100}"' korrigiert werden zu
+  "`+8,\,+9~\textbf{100}"'. (Die +7 steht schon in der jeweils
+  vorangehenden Zeile.) 
+\item In [DFR\,120] linke Spalte, vorletzter Absatz steht geschrieben, daß ein
+  Kurzsichtiger keine Probleme beim Fernkampf hat (mit Ausnahme von
+  Scharfschießen).  In [DFR\,116] linke Spalte, vorletzter Absatz steht
+  hingegen, daß der Spielleiter vor jedem Schuß auf Ziele außerhalb des
+  Nahbereichs einen EW:Sehen verlangen kann. Es gilt letztere Regel, wobei
+  ausdrücklich auf das \emph{kann} verwiesen wird.  Der EW ist also kein
+  Automatismus, sondern dem Spielleiter überlassen.
+\end{itemize}
+
+\section{Fertigkeiten}
+
+\begin{itemize}
+\item Der \textbf{automatische} EW f"ur Entdeckungs- und Wissensfertigkeiten
+  und für Sinne [DFR\,114] mu"s nicht grunds"atzlich \textbf{kritisch
+    erfolgreich} sein. Bei einfach zu entdeckenden Informationen kann nach
+  Spielleiterentscheidung auch ein \textbf{normaler Erfolg} reichen, und ein
+  automatischer EW kann auch gewährt werden, wenn die entsprechende Fertigkeit
+  ungelernt bzw. der Sinn nicht überdurchschnittlich gut entwickelt ist. Ein
+  derartiges Vorgehen wird auch in den Regeln an vielen Stellen mehr oder
+  weniger deutlich angedeutet: [DFR\,78] (EW:Riechen im Beispiel), [DFR\,114]
+  (Beispielkasten), [DFR\,145] (Giftmischen), [DFR\,159f]
+  (Menschenkenntnis)\dots
+\item \textbf{\emph{Alchimie}} [DFR\,130], \textbf{\emph{Giftmischen}}
+  [DFR\,145f], \textbf{\emph{Heilkunde}} [DFR\,147f],
+  \textbf{\emph{Kr"auterkunde}} [DFR\,156f], \textbf{\emph{Pflanzenkunde}}
+  [DFR\,164], \textbf{\emph{Tierkunde}} [DFR\,188]: All diese Fertigkeiten
+  haben eine mehr oder weniger große Schnittmenge im Gebiet der Verarbeitung
+  und Identifikation von Substanzen. Leider ist die Abgrenzung durch das
+  Originalregelwerk nicht sonderlich gelungen. In früheren Versionen dieser
+  Hausregel wurde versucht, diese Fertigkeiten etwas systematischer (z.\,B.
+  aufgrund des verarbeiteten Materials oder des Anwendungsgebietes) zu
+  definieren. Mit der 4.~Auflage des Regelwerkes wurde jedoch an vielen
+  Stellen detaillierter geregelt, welche Fertigkeit wann zur Anwendung kommt.
+  Damit bewirkt die Neudefinition durch die Hausregeln einen zu großen
+  Eingriff und wird aufgegeben. Im folgenden seien nur einige Hinweise
+  gegeben, die die Abgrenzung der Fertigkeiten im Sinne des Regelwerks
+  erleichtern und behutsam ergänzen sollen:
+  \begin{itemize}
+  \item Generell sollte sich der Spielleiter eher großzügig zeigen, was die
+    Anwendungsgebiete der Fertigkeiten angeht, insbesondere wenn die Spieler
+    fanatasievoll darlegen können, wie ihre Figuren eine bestimmten Fertigkeit
+    in einer gegebenen Situation geeignet anwenden können. Andererseits sollte
+    eine SpF, die gleich mehrere potentiell anwendbare Fertigkeiten beherrscht
+    (z.\,B. \emph{Heilkunde, Giftmischen, Kräuterkunde} und
+    \emph{Pflanzenkunde} bei der Frage, ob und wie ein bestimmtes Kraut gegen
+    einen Wespenstich angewendet werden kann), nicht benachteiligt werden.
+    Einerseits kann man bei Anwendung einer nicht genau passenden Fertigkeit
+    negative WM verteilen, andererseits kann man einer SpF, die mehrere
+    passende Fertigkeiten beherrscht, mehrere EW zugestehen (gewissermaßen für
+    verschiedene Herangehensweisen an dasselbe Problem).
+  \item \emph{Alchimie} ist die allgemeinste der angesprochenen Fertigkeiten.
+    Sie ist gewissermaßen genau das Fachgebiet, in dem all die anderen
+    angesprochenen Fertigkeiten ihre Schnittmenge haben (Verarbeitung und
+    Identifikation von Substanzen). Grundsätzlich sollte Alchimie also dann
+    Anwendung finden, wenn keine der anderen Fertigkeiten so recht passen
+    will. In den anderen Fällen kann Alchimie ebenfalls helfen, aber dann ist
+    mit negativer WM zu rechnen. Je näher eine (ehemals) belebte Substanz noch
+    ihren natürlichen Ursprüngen ist, desto eher finden \emph{Pflanzenkunde},
+    \emph{Tierkunde} oder auch \emph{Kräuterkunde} Anwendung. Wenn das
+    Anwendungsgebiet in Richtung Heilung bzw. Vergiftung tendiert, dann passen
+    eher \emph{Kräuerkunde} und \emph{Heilkunde} bzw. \emph{Giftmischen}. Die
+    Verwendung unbelebter oder bereits stark alchimistisch bearbeiteter
+    Substanzen oder die gleichzeitige Verwendung von Substanzen
+    unterschiedlichsten Ursprungs und die Anwendung von Magie sind Indizien
+    für \emph{Alchimie}. Auch die Methodik kann bei der Entscheidung eine
+    Rolle spielen. Dazu halte man sich vor Augen, daß die Alchimie in der
+    realen Welt die Vorläuferin der Chemie darstellt, aber auch mit viel
+    Mystik und Esoterik durchdrungen ist. (Etwas davon erahnen konnte man in
+    \emph{Sturm über Mokattam}, wo die "`chymische Hochzeit"' der
+    gegensätzlichen Prinzipien Schwefel und Quecksilber zum roten Zinnober
+    vorkam.)
+  \item \emph{Giftmischen} ist gewissermaßen ein Spezialgebiet, das aus allen
+    anderen angesprochenen Fertigkeiten "`entnommen"' wurde. Die Verarbeitung
+    und Identifizierung tierischer Substanzen zu Giften stammt aus der
+    \emph{Tierkunde}, entsprechendes gilt für pflanzliche Substanzen und
+    \emph{Kräuterkunde} und \emph{Pflanzenkunde}. Die Herstellung und
+    Anwendung von Gegengiften überschneidet sich mit \emph{Heilkunde}
+    und \emph{Kräuterkunde}, während die Verarbeitung und Identifizierung von
+    unbelebten oder alchimistisch verarbeiteten giftigen Substanzen der
+    \emph{Alchimie} entstammt. Für magische Gifte gilt dies umso mehr.
+  \item Die \emph{Heilkunde} beschäftigt sich natürlich hauptsächlich nicht
+    mit der Anwendung und Identifizierung von Substanzen, sondern mit ganz
+    anderen Dingen (Identifikation von Krankheiten, "`handwerkliches"'
+    Vorgehen zur Wundbehandlung und vieles mehr). Dennoch wird ein
+    Heilkundiger sich nicht Kenntnissen verschließen, welches Kraut bei einem
+    Fieber Anwendung finden könnte oder welches Gegengift nach dem Biß einer
+    Giftschlange wirken könnte (oder auch nur, welche Symptome auf ein
+    bestimmtes Gift hinweisen). Hier gibt es also durchaus eine Schnittmenge.
+    Allerdings ist die Heilkunde diesbezüglich recht unspezifisch, wie dies ja
+    auch im Regelwerk schon angedeutet wird.
+  \item Die \emph{Kräuterkunde} wird auch im Regelwerk schon relativ klar von
+    \emph{Giftmischen} und \emph{Heilkunde} abgegrenzt. Problematischer ist
+    die Abgrenzung zur \emph{Pflanzenkunde}. Generell ist die
+    \emph{Pflanzenkunde} eher für die Identifikation und das Auffinden von
+    Pflanzen in der freien Natur geeignet, während die \emph{Kräuterkunde}
+    eher die Weiterverarbeitung und Anwendung der verarbeiteten pflanzlichen
+    Substanzen beinhaltet, und zwar insbesondere wenn es um eine heilende
+    Wirkung geht. Hat eine Pflanze schon in Rohform und ohne größere Umstände
+    bei der Anwendung eine heilende Wirkung, wird dies auch ein
+    Pflanzenkundiger wissen (Beispiel: schmerzstillende Wirkung durch Kauen
+    von Rinde der Trauerweide).
+  \item Die \emph{Tierkunde} beschäftigt sich ebenso wie die \emph{Heilkunde}
+    nur nebenbei mit den hier besprochenen Aspekten der Identifizierung und
+    Verarbeitung von Substanzen. Aber ebenso wie \emph{Kräuterkunde} und
+    \emph{Pflanzenkunde} im Bereich pflanzlicher Substanzen kann
+    \emph{Tierkunde} im Bereich tierischer Substanzen angewendet werden. Der
+    Übergang zu \emph{Alchimie} (bei weitergehender Verarbeitung tierischer
+    Substanzen, insbesondere magischer Natur) bzw. zum \emph{Giftmischen} (bei
+    Verwendung tierischer Substanzen zum Mischen von Giften und Gegengiften)
+    ist eher früher anzusetzen als bei \emph{Kräuter-/Pflanzenkunde}, da
+    Tierkunde sich wie gesagt nur am Rande mit der Verarbeitung und
+    Identifizierung tierischer Substanzen beschäftigt.
+  \end{itemize}
+\item \emph{\textbf{Einprägen: }}Der EW zum Überprüfen, ob das Einprägen
+  gelungen ist, wird erst beim Versuch des Erinnerns gewürfelt. (Dies soll
+  verhindern, daß eine SpF einfach solange hintereinander \emph{Einprägen}
+  anwendet, bis der EW gelingt.) [DFR\,117]
+\item \emph{\textbf{Geschäftstüchtigkeit: }}Abweichend vom Regelwerk spart
+  eine SpF bei nicht ausgespielten Lernphasen grundsätzlich 10\,\%\ der
+  Lernkosten, ohne daß dafür ein EW fällig wäre. (Im Gegensatz zum Regelwerk
+  betrachten die Hausregeln die Lernkosten eben nicht nur als direkte
+  Bezahlung des Lehrmeisters, sondern auch als Kosten für den
+  Lebensunterhalt.)
+\item Beim \textbf{\emph{Meucheln}} Nach [DFR\,160ff] mu"s mindestens 1\,LP
+  schwerer Schaden angerichtet werden, damit das Opfer stirbt. Je nach
+  Methode des Meuchelns und Art der R"ustung wird der R"ustungsschutz
+  jedoch nicht ber"ucksichtigt. (Einen Dolch durch eine
+  Plattenr"ustung ins Herz zu sto"sen, ist fast unm"oglich. Beim
+  Erw"urgen mit einer Schnur nutzt die Plattenr"ustung hingegen
+  "uberhaupt nicht. Eine Textilr"ustung oder Lederr"ustung bietet
+  vielleicht eine passende L"ucke f"ur einen Sto"s ins Herz.) Die
+  negative WM--Grad, die auf den EW:Meucheln angerechnet wird, steht
+  f"ur die besseren Reflexe, die Intuition und den sechsten Sinn, die
+  erfahrene Figuren  sich angeeignet haben. Bei Kreaturen, die aufgrund
+  ihrer angeborenen Gef"ahrlichkeit und nicht aufgrund von Erfahrung
+  einen hohen Grad besitzen, wird diese WM abgeschw"acht oder gar
+  aufgehoben.
+\item \emph{\textbf{Schleichen}} [DFR\,170]: Wird ein \textbf{Schlafender}
+  beschlichen, erh"alt der Schleichende \textbf{WM+4} (wie Ablenkung
+  durch schwierige T"atigkeit). Außerdem gilt der Schlafende ans
+  besonders unaufmerksam (erwacht nur nach gelungenen WW:Hören). 
+\item \emph{\textbf{Tauchen: }}Ein \textbf{Taucher} bewegt sich mit
+  \textbf{B3}. Wenn er sich schneller bewegt, werden die
+  \textbf{EW:Tauchen} entsprechend fr"uher f"allig. [DFR\,188]
+\end{itemize} 
+
+\section{Erfahrung}
+
+\subsection{Vergabe von Erfahrungspunkten}
+
+\subsubsection{KEP:}
+
+In der Regel verliert ein Gegner AP entsprechend des
+erw"urfelten Schadens. Es gibt jedoch auch indirekte AP-Verluste
+(z.\,B. wenn durch den Schlag der Gegner auf die H"alfte seiner LP
+reduziert wird und dadurch auch nur noch maximal "uber die H"alfte
+seiner AP verf"ugt) und die M"oglichkeit, da"s der Gegner nach dem
+Schlag kampfunf"ahig ist. F"ur diese Auswirkungen gibt es nur unter
+bestimmten Umst"anden KEP. Bei einem \textbf{normalen Treffer} gibt es
+immer nur maximal f"ur den \textbf{direkt erw"urfelten Schaden KEP}
+(da"s ein Gegner durch die LP-Verluste dieses Treffers auf die H"alfte
+seiner AP reduziert wird oder schwer verletzt zusammenbricht, ist
+gewisserma"sen Zufall und erh"oht nicht die durch diesen Treffer
+gemachte Erfahrung). Wird ein Gegner durch einen \textbf{kritischen
+  Treffer} oder einen \textbf{gezielten Hieb} get"otet, bewu"stlos
+oder v"ollig kampfunf"ahig, so erh"alt die SpF ("ahnlich wie ein
+Zauberer, der einen Gegner durch einen einzigen Zauber kampfunf"ahig
+macht) \textbf{soviele KEP}, als wenn er dem Gegner \textbf{alle seine
+  verbliebenen AP} durch normale Angriffe geraubt h"atte.
+\textbf{Keine} KEP gibt es f"ur Angriffe, bei denen der Gegner zu
+keiner Gegenwehr f"ahig ist, insbesondere \textbf{Fernkampfangriffe
+  aus dem Hinterhalt} (also auch beim Scharfschie"sen) oder Angriffe
+beim \textbf{Meucheln} [DFR\,268]. Hierf"ur gibt es unter Umst"anden
+\textbf{AEP} f"ur die "Uberwindung eines Gegners [DFR\,270f], wobei
+der Multiplikator für KEP-Vergabe auch bei den so vergebenen AEP
+Berücksichtigung finden kann (Faustregel: Die Anzahl an AEP für die
+Überwindung eines Gegners entspricht der Anzahl an KEP, die es gegeben
+hätte, wenn dem Gegner alle AP durch Fernkampfangriffe geraubt worden
+wären.)
+
+\subsubsection{ZEP:} 
+
+Gelingt sowohl der EW:Zaubern wie auch der WW:Resistenz, erh"alt der Zauberer
+in der Regel dennoch ZEP, sofern der Zauber nicht ausschließlich darauf
+gezielt hat, dem Opfer AP zu rauben bzw. es kampfunfähig zu machen [DFR\,269].
+Allerdings sollte der Spielleiter bei Serien von vergeblichen Bannversuchen
+o.\,ä. nur einen Versuch mit ZEP belohnen. (Wenn aber dann das Zauberduell
+gegen einen überlegenen Zauberer schließlich doch gelingt, darf es ruhig ein
+paar Bonus-ZEP geben.)
+
+Ob ein Zauber ein Angriffszauber oder ein sonstiger Zauber ist, wird
+flexibel entschieden. Z.\,B. kann eine Feuerkugel sehr wirksam die
+Gegner erschrecken oder gar vertreiben, ohne einen einzigen AP Schaden
+anzurichten. In einem solchen Fall z"ahlt \emph{Feuerkugel} als
+sonstiger Zauber.  Beschw"orungen werden grunds"atzlich als sonstige
+Zauber gez"ahlt.  F"ur effiziente Anwendung der beschworenen Wesen
+kann der Beschw"orer jedoch AEP erhalten. ZEP f"ur \textbf{sonstige
+  Zauber}, bei denen der Zauberer \textbf{alle} seine AP opfern mu"s,
+werden grunds"atzlich nicht nach der Anzahl der verbrauchten AP
+berechnet, sondern vom Spielleiter je nach Bedeutung des
+durchgef"uhrten Zaubers frei bestimmt.
+
+\subsection{Praxispunkte}
+
+PP, die nach den Standardregeln durch einen \textbf{doppelten EW}
+vergeben werden, werden grundsätzlich für jeden erfolgreichen EW
+vergeben, den der Spielleiter für PP-würdig hält. Es ist also kein
+zweiter EW mehr nötig, der mißlingen muß. Dies gilt genauso für
+Wissensfertigkeiten, bei denen also auch ein gelungener EW zur
+Praxispunktvergabe führt. Der Spielleiter hat ausdrücklich das Recht,
+gelungene EW für nicht PP-würdig zu erklären (wenn z.\,B. die
+entsprechende Handlung der SpF belanglos war) und in Situationen, wo
+ganze Serien von EW für ein und dieselbe Fertigkeit gewürfelt werden,
+nur maximal einen PP insgesamt zu vergeben.
+
+Diese Regeländerung soll die PP-bezogene Schwächung allgemeiner
+Fertigkeiten durch die 4.~Auflage der Midgard-Regeln ausgleichen.
+Außerdem entfallen eine Menge Würfelwürfe, was eine geringere Störung
+des Spielablaufs darstellt.
+
+\subsection{Lernen}
+
+Die Lernregeln geh"oren wohl zu den meistdiskutierten Teilen des
+\textsc{Midgard}-Systems. Immer wieder werden die astronomisch hohen
+Lernkosten kritisiert oder die fehlende M"oglichkeit, da"s sich SpF
+gegenseitig etwas beibringen. Dieser Abschnitt f"uhrt einige wenige
+Neuregelungen ein, dient aber viel eher der Interpretation als der
+"Anderung der existierenden Regeln.
+
+\subsubsection{Grundsätzliche Anmerkungen}
+
+Die Lernregeln sind eine pauschale Regelung, um die sonst in vielen
+F"allen schnell stereotypisch ablaufenden Lernvorg"ange nicht explizit
+ausspielen zu m"ussen. So eine Pauschalregelung kann in Einzelf"allen
+zu unsinnigen Ergebnissen f"uhren. In solchen F"allen ist flexibel zu
+improvisieren. Beim Erlernen besonderer F"ahigkeiten, also z.\,B.
+eines speziellen Zauberspruchs oder eines besonders hohen
+Erfolgswertes, bietet es sich an, das Aufsuchen des Lehrmeisters
+auszuspielen. F"ur m"achtige Zauberspr"uche und hochperfektionierte
+Fertigkeiten gibt es nur wenige Lehrmeister, die in Frage kommen.
+Diese einzigartigen Lehrmeister sind auch nicht unbedingt mit Geld zu
+bezahlen, sondern eher in ebenso einzigartigen Dienstleistungen oder
+einzigartigen wertvollen, wom"oglich magischen Gegenst"anden. Die
+hohen Lernkosten erkl"aren sich auch dadurch, da"s Geld eigentlich das
+falsche Mittel ist, herausragende Lehrmeister zu bezahlen. Aus der Not
+kann eine Tugend gemacht werden, denn die Bezahlung in
+Dienstleistungen ist ein willkommener Anla"s f"ur Abenteuer jenseits
+der klassischen Auftragssituation, und die Bezahlung mit magischen
+Gegenst"anden ist ein Weg, ein eventuell au"ser Kontrolle geratenes
+Arsenal der SpF an magischen Gegenst"anden wieder auszud"unnen und den
+SpF dabei gleichzeitig ad"aquate Gegenleistung zu bieten.
+
+\begin{tabular}{|p{16.5cm}|}
+  \hline
+  \textbf{Beispiel:} \emph{Der Priester Fares lebt in klosterartiger
+    Tempelgemeinschaft. Die Mitglieder der Gemeinschaft haben kein
+    wesentliches Privateigentum. Nat"urlich verlangt die
+    Tempelgemeinschaft von ihren Mitgliedern auch kein Geld f"ur das
+    Leben im Tempel und das Lernen von Wundertaten. Wovon sollten die
+    Priester das auch bezahlen? Andererseits stellt Fares nat"urlich
+    seine Erl"ose aus den Abenteuern der Tempelgemeinschaft zur
+    Verf"ugung. Und die Tempelgemeinschaft wiederum bezahlt manchmal
+    auch Lehrmeister, die Fares F"ahigkeiten beibringen, die f"ur seine
+    Dienste im Auftrage der Gottheit unerl"a"slich sind. (Die
+    Bezahlung k"onnte z.\,B. so aussehen, da"s der entsprechende
+    Lehrmeister im Tempel von seiner Gicht geheilt wird.) Fares ist
+    als tiefgl"aubiger Priester von seiner Tempelgemeinschaft
+    "uberzeugt und w"urde die beschriebenen spieltechnischen
+    Privilegien niemals egoistisch ausnutzen. (Auch das Einsetzen von
+    nur dem Mindestdrittel an EP k"onnte man als schamloses Ausnutzen
+    der Tempelgemeinschaft interpretieren, denn es entspricht einem
+    minimalen pers"onlichen Einsatz beim Lernen.) Mit Spielern, die
+    ihre Rolle glaubw"urdig spielen, sind derartige
+    flexible Regelungen beim Lernen ohne Probleme m"oglich. Spieler,
+    die solche gutm"utigen Regelungen massiv zum eigenen
+    spieltechnischen Vorteil auszunutzen, m"ussen sich fragen lassen,
+    ob sie geeignet sind, einen Priester zu spielen. -- Oxymanos, der
+    Magier, m"ochte einen m"achtigen Zauber lernen, den ihm niemand aus
+    seiner Gilde in Chryseia beibringen kann. Nach einigen Recherchen findet er
+    heraus, da"s es in Candranor einen Lehrmeister gibt, der diesen
+    Zauber beherrscht. Da Oxymanos' Abenteurergruppe auch
+    daran interessiert ist, da"s 
+    er den Zauber lernt (und er verspricht, bei sp"ateren
+    Gelegenheiten sich erkenntlich zu zeigen), begleiten sie ihn nach 
+    Candranor. Dort angekommen, stellt sich heraus, da"s der magische
+    Lehrmeister von seiner letzten Expedition in die tegarische Steppe nicht
+    zur"uckgekehrt ist und als verschollen gilt. Die Gruppe bricht
+    auf, ihn zu finden. Nach einem l"angeren Abenteuer gelingt es
+    ihnen, den Magier aus der Gefangenschaft eines Tegarenstammes zu
+    befreien. Dankbar erkl"art er sich bereit, Oxymanos kostenlos den
+    begehrten Zauberspruch zu lehren.}\\
+  \hline
+\end{tabular}
+
+\subsubsection{Unterbrechungen des Lernens}
+
+Im Gegensatz zu den Standardregeln sind Unterbrechungen des
+Lernvorgangs grundsätzlich schadlos möglich. Auch kann ein Lernvorgang
+beliebig modularisiert werden in Teile, die durch Unterweisung, durch
+Selbststudium oder durch Praxis gelernt werden. Diese Regelung sollte
+natürlich nicht exzessiv ausgenutzt werden und kann in Einzelfällen
+vom Spielleiter auch ausgesetzt werden, wenn dies sinnvoll erscheint.
+Aber gerade bei sehr umfangreichen Lernvorgängen (z.\,B. die sehr
+aufwendige Steigerung eines bereits hohen Erfolgswertes für eine
+Waffe) erscheint es umglaubwürdig, daß dies in einem Stück und an
+einem Ort zu erfolgen hat.
+
+\subsubsection{Lernen durch Praxis}
+
+Das Lernen durch Praxis erfolgt exakt nach Standardregelwerk
+[DFR\,284]. Insbesondere sind die Lebenshaltungskosten in der Tat
+nicht in den Lernkosten enthalten (vgl. weiter unten). Die
+Lebenshaltungskosten fallen bei einem Lerntempo von 500\,FP pro Tag
+auch kaum ins Gewicht. Spesen fallen ohnehin nicht an.
+
+\subsubsection{Lerndauer}
+
+Die \textbf{Lerndauer} von einem Tag pro 10\,FP (bzw. pro 5\,FP bei
+Lernen durch Selbststudium bzw. mit weniger als 1/3 EP (s.\,u.)) wird
+nur erreicht, wenn der Lernende sich ausschlie"slich dem Lernen widmet
+und dabei \textbf{optimale Bedingungen} vorfindet. Nur unter sehr
+speziellen Umst"anden ist es denkbar, da"s sich die Lernzeit weiter
+verk"urzt. Viel eher wird sich die Lernzeit durch widrige Umst"ande
+verl"angern.
+
+Die Dauer des Steigern des AP-Maximums [DFR\,288] wird im Normalfall ebenfalls
+wie oben berechnet. Es gibt aber eine spezielle Art des Selbststudiums, die im
+Abschnitt \ref{selbststudium} beschrieben wird und wie im Regelwerk
+beschrieben immer einen Monat dauert.
+
+\subsubsection{Zusammensetzung der Lernkosten}
+
+Die Lernkosten beinhalten (im Gegensatz zu den Standardregeln) den
+\textbf{Lebensunterhalt} w"ahrend der Lernzeit (wobei die Kosten für den
+Lebensunterhalt sich mit einem eigenen Haus nur unwesentlich reduzieren).
+Dabei ist ber"ucksichtigt, da"s ein Abenteurer nach langem anstregenden, aber
+erfolgreichen Abenteuer vermutlich nicht in Armut leben, sondern vielmehr eine
+\textbf{"uberdurchschnittliche Lebensqualit"at} genie"sen will und da"s es
+einigen Aufwand erfordert, die oben beschriebenen \textbf{optimalen
+  Bedingungen} zu erreichen. Der SpF bleibt keine Zeit, sich um die
+Nahrungsbeschaffung oder die Instandhaltung seines Haushaltes zu k"ummern.
+Dazu mu"s er bezahlte Dienstleistungen in Anspruch nehmen. Die
+Lebenshaltungskosten lassen sich reduzieren, wenn er derartige Aufgaben selber
+wahrnimmt, was dann allerdings die Lerndauer erh"oht (und dadurch nat"urlich
+die Ersparnis an Lebenshaltungskosten wieder zunichte machen kann, weil f"ur
+das Erlernen einer bestimmten F"ahigkeit der Lebensunterhalt nun f"ur eine
+l"angere Zeit zu bestreiten ist).
+
+Die Lebenshaltungskosten sind im Mindestdrittel der Lernkosten, das in
+Geld zu erbringen ist, enthalten. Dieses Mindestdrittel ist (entgegen
+den Standardregeln) auch im Selbststudium nötig. Außer den
+Lebenshaltungskosten enthält es Kosten für Lehrmittel, sonstige Spesen
+und Nebenkosten (Reisekosten zu Studienstätten, Bibliotheksbenutzung
+etc.) und einen gewissen Sockelbetrag für den Lehrmeister (der im
+Selbststudium durch erhöhte Kosten für Lehrmittel und Spesen und durch
+die erhöhte Lerndauer erhöhte Lebenshaltungskosten ersetzt wird).
+
+Das zweite Drittel der Lernkosten kann alternativ durch eigene
+Erfahrung (EP) oder durch die Leistung eines besseren Lehrmeisters
+aufgebracht werden (der dann entsprechend mehr Geld verlangt).
+
+Das letzte Drittel wird Grundsätzlich immer durch Einbringen der
+eigenen Erfahrung, also in EP bezahlt. Nur bei exzellenten
+Lehrmeistern ist es möglich, auch dieses letzte Drittel durch
+Bezahlung des Lehrmeisters, also durch Geld zu ersetzen.
+
+Tabelle~\ref{tab:lernkosten} soll veranschaulichen, wie sich die Lernkosten
+aufteilen und unter welchen Umst"anden eine Reduzierung der Kosten
+m"oglich sein mag.
+
+\begin{table}[htbp]
+  \begin{center}
+
+    {\footnotesize 
+      \begin{tabular}{|p{1cm}|c|p{5cm}|p{7.5cm}|}
+        \hline
+        & \textbf{Zahlungsart}& \textbf{Bedeutung}
+        & \textbf{Kostenbefreiung oder -reduzierung,
+          Anmerkungen} \\
+        \hline
+        erstes& EP & nicht m"oglich& --- \\
+        \cline{2-4}
+        Drittel & Geld & Lebensunterhalt (Kost und Logis etc.), Lehrmittel,
+        ggf. Reisekosten, jegliche sonstige Nebenkosten, bei
+        Unterweisung Grundbetrag für den Lehrmeister & verbilligte
+        Unterkunft oder Verpflegung werden gew"ahrt, Lehrmittel werden zur
+        Verf"ugung gestellt, SpF nimmt verringerte Lebensqualit"at hin etc. \\
+        \hline
+        zweites Drittel & EP & Einbringen der eigenen Erfahrung & Auch wenn
+        $\frac{\sf 2}{\sf 3}$ der Lernkosten in EP bezahlt werden, ist zumindestens ein 
+        unerfahrener Lehrmeister erforderlich, wenn nicht im
+        Selbststudium gelernt wird, was zusätzliche Hilfsmittel (spezielle
+        Literatur etc.)
+        erfordert. Das Selbststudium dauert außerdem doppelt so lange.\\
+        \cline{2-4}
+        & Geld & Bezahlung des Lehrmeisters & Lehrmeister kann seine Dienste verbilligt
+        oder kostenlos zur Verf"ugung stellen. \\
+        \hline
+        drittes & EP &  Einbringen der eigenen Erfahrung & ---\\
+        \cline{2-4}
+        Drittel & Geld & Bezahlung des Lehrmeisters, nur m"oglich bei
+        exzellentem Lehrmeister, dabei ist unter Umst"anden eine erh"ohte
+        Bezahlung oder Lernzeit erforderlich. & Lehrmeister kann seine Dienste verbilligt
+        oder kostenlos zur Verf"ugung stellen \\
+        \hline
+      \end{tabular}
+      }
+
+    \caption{Aufteilung der Lernkosten bei Selbststudium und Unterweisung}
+    \label{tab:lernkosten}
+  \end{center}
+\end{table}
+
+\subsubsection{Lehrmeister}
+
+Im Gegensatz zu den Standardregeln können durchaus auch SpF als
+Lehrmeister tätig werden. Es ist grunds"atzlich nur m"oglich,
+F"ahigkeiten zu lehren, die man selber beherrscht. Maximal kann der
+Erfolgswert oder die Stufe vermittelt werden, die man selber
+beherrscht.  AP-Steigerungen k"onnen nur bis zu dem Grad vermittelt
+werden, f"ur den man selber bereits die AP-Steigerung mindestens
+einmal vollzogen hat. SpF gelten grunds"atzlich als
+\textbf{unerfahrene} Lehrmeister, d.\,h. der Lernende mu"s $\frac{\sf
+  2}{\sf 3}$ der Lernkosten in EP zahlen. Das restliche Drittel muß
+weiterhin mit Geld bezahlt werden, weil sich dieses Drittel ohnehin
+hauptsächlich aus Lebensunterhalt und Nebenkosten zusammensetzt. Der
+geringe Anteil, der davon für den Lehrmeister vorgesehen ist, wird
+einerseits von den Lebenshaltungskosten der lehrenden SpF aufgezehrt,
+andererseits durch die bei einem unerfahrenen Lehrmeister erhöhte
+Lernzeit (die wiederum die Lebenshaltungskosten erhöht).
+
+Zum \textbf{Standardlehrmeister} im Sinne des Regelwerks (bei dem der
+Lernende nur $\frac{\sf 1}{\sf 3}$ der Lernkosten in EP zahlen mu"s)
+wird man, wenn man eine bestimmte F"ahigkeit (bis zum zu lehrenden
+Erfolgswert bzw. zur lehrenden Stufe) \textbf{zweimal} gelernt hat. Um
+zum \textbf{exzellenten} Lehrmeisters zu werden (bei dem die gesamten
+Lernkosten mit Geld bezahlt werden können), mu"s man die zu lehrende
+F"ahigkeit \textbf{viermal} gelernt haben. NSpF, die eine F"ahigkeit
+als Teil ihres Alltags st"andig auf professionellem Niveau
+durchf"uhren, gelten grunds"atzlich als Standardlehrmeister. Bei
+besonderer Begabung k"onnen sie auch exzellente Lehrmeister sein.
+
+\subsubsection{Selbststudium}
+\label{selbststudium}
+
+Das Selbststudium ist gewisserma"sen Forschungsarbeit. Das Wissen um
+die zu erlernenden F"ahigkeiten mu"s erst zusammengetragen werden
+(durch Literaturstudium, Ausprobieren, Feldstudien oder andere
+denkbare Forschungsmethoden). Das Selbststudium dauert somit wie im
+Regelwerk festgelegt deutlich l"anger als das Lernen von einem
+Lehrmeister. Dies gilt besonders f"ur SpF, die keine so gro"se
+Erfahrung im Selbststudium haben wie NSpF, die sich weitestgehend auf
+eine Disziplin spezialisiert haben und sich im wesentlichen mit nichts
+anderem mehr besch"aftigen (und nat"urlich auch nur in ihrer Disziplin
+die Methoden des Selbststudiums beherrschen).
+
+Wie schon gesagt, erfordert das Selbststudium im Gegensatz zum
+Standardregelwerk das Mindestdrittel in Geld. Dafür kann man aber auch
+neue Fertigkeiten/Zauberkünste durch Selbststudium erlernen.
+
+Eine Ausnahme stellt die Steigerung des AP-Maximums dar. Da für eine SpF
+gewissermaßen das "`ganz normale Abenteurerleben"' das Training zur Steigerung
+der Ausdauer darstellt, kann sie das AP-Maximum "`nebenbei"' während des
+Abentuers, einer Lernphase oder wann auch immer steigern. Dies erfordert immer
+\textbf{1~Monat}. Es müssen die \textbf{gesamten FP-Kosten mit EP} beglichen
+werden. Der Lebensunterhalt wird in diesem Falle gesondert abgerechnet (wobei
+allerdings keine beosnderen Maßnahmen zu ergreifen sind und dieses
+Selbststudium auch unter bescheidenen Lebensverhältnissen möglich ist). Bis
+auf die Beschränkung, daß die gesamten FP-Kosten mit EP bezahlt werden müssen,
+entspricht dies also der AP-Steigerung, wie sie ursprünglich im Regelwerk
+vorgesehen ist.
+
+\subsubsection{Wie lernen NSpF?}
+
+NSpF ziehen nicht unbedingt auf Abenteuer aus, um EP zu sammeln. Wie
+lernen sie?  Zum einen gibt es die M"oglichkeit, bei einem
+\textbf{exzellenten} Lehrmeister die Lernkosten \textbf{komplett in
+  Geld} zu bezahlen (vgl.  Tabelle~\ref{tab:lernkosten}), zum anderen
+eine spezielle Form des Selbststudiums: Spezialisierte NSpF haben
+m"oglicherweise einen Weg gefunden, EP durch ihre Forschungen und
+"Ubungen zu generieren. SpF steht dieser Weg nur in Ausnahmef"allen
+offen, wenn sie sich nicht weitgehend vom Abenteurerleben
+verabschieden und stattdessen der geregelten Spezialt"atigkeit eines
+Gelehrten, eines se"shaften Magiers, eines Kampftrainers etc.
+nachgehen wollen.  Das hier beschriebene Selbststudium ist "ubrigens
+auch der spieltechnische Weg, auf dem neuartige Fertigkeiten,
+Zauberspr"uche usw. entwickelt werden.
+
+
+
+%Eine allgemeinere M"oglichkeit, das Lehren von F"ahigkeiten zu
+%erlernen, ist es, die Fertigkeit \emph{Lehren}
+%(Tabelle~\ref{tab:lehren}) zu erlernen. Sie mu"s
+%jeweils getrennt f"ur "`ZEP"'-, "`AEP"'- und "`KEP"'-F"ahigkeiten
+%gelernt werden (vgl. T12a).
+%
+%\begin{table}[htbp]
+%
+%  \begin{center}
+%    \framebox{
+%      \begin{minipage}[c]{16cm}
+%
+%        \begin{description}
+%        \item[\large Lehren] ("`AEP"' kann nur mit AEP gelernt werden, "`KEP"'
+%          zus"atzlich mit KEP, "`ZEP"' zus"atzlich mit ZEP)
+%        \item[Grundf"ahigkeit:] Magister; Z (nur "`ZEP"'); Kr, S"o (nur
+%          "`KEP"')
+%        \item[Ausnahmef"ahigkeit:] Kr, S"o (nur "`ZEP"'); Z (nur "`KEP"')
+%        \end{description}
+%        \begin{tabular}{cccl}
+%          \textbf{Stufe} & \textbf{Anteil} & \textbf{Kosten} & \\
+%          \vspace{1mm}
+%          1 & $\frac{\sf 1}{\sf 9}$ & 250\,FP & \\
+%          \vspace{1mm}
+%          2 & $\frac{\sf 2}{\sf 9}$ & 500\,FP & \\
+%          \vspace{1mm}
+%          3 & $\frac{\sf 1}{\sf 3}$ &1000\,FP & entspricht dem Standardlehrmeister aus dem Regelwerk\\
+%          \vspace{1mm}
+%          4 & $\frac{\sf 4}{\sf 9}$ &2000\,FP & \\
+%          \vspace{1mm}
+%          5 & $\frac{\sf 5}{\sf 9}$ &4000\,FP & \\
+%          \vspace{1mm}
+%          6 & $\frac{\sf 2}{\sf 3}$ &8000\,FP & entspricht dem exzellenten Lehrmeister\\
+%        \end{tabular}
+%        \vspace*{5mm}
+%
+%        {\small
+%          \textbf{Anteil} ist der Anteil an FP, der beim Lernen durch den
+%          Lehrmeister geleistet wird (vgl. Tabelle \ref{tab:lernkosten}).
+%          
+%          }
+%      \end{minipage}
+%      }
+%    \caption{Fertigkeit \emph{Lehren}}
+%    \label{tab:lehren}
+%  \end{center}
+%\end{table}
+
+
+\section{Kampf}
+
+\subsection{Bewegung}
+
+Figuren, die sich in der vorangegangenen Runde \textbf{vom Gegner gel"ost} 
+haben, z"ahlen noch nicht als \textbf{fliehende} Figuren, d"urfen sich 
+also nicht automatisch als erste bewegen.
+
+Bewegungen auf dem Spielfeldraster sind auch \textbf{diagonal}
+m"oglich. Solch ein Schritt z"ahlt wie die Bewegung "uber
+\textbf{1,5~Felder}.
+
+Sich \textbf{seitw"arts} oder \textbf{r"uckw"arts} zu bewegen kostet die 
+doppelte Feldzahl.
+
+\textbf{Drehungen} um mehr als 45$^\circ$ bis zu 180$^\circ$ kosten
+$\frac{\sf 1}{\sf 10}$ der Bewegungsweite.
+
+\subsection{Handlung}
+
+Handlungen werden (theoretisch) \textbf{gleichzeitig angesagt} und
+dann in \textbf{Handlungsrang-Reihenfolge durchgef"uhrt}. Eine
+angesagte Handlung kann im Nachhinein \textbf{nicht mehr ge"andert}
+werden. Allerdings ist es jederzeit m"oglich, eine Handlung
+\textbf{abzubrechen}.
+
+\subsection{Rüstungschutz}
+
+Die Beschränkung des Rüstungsschutzes gegen Armbrüste, Langbögen und
+Kompositbögen [DFR\,97] gilt nur bei Metallplatten (die durch derartige
+Geschosse durchschlagen werden). Bei ausreichend anderer Art der Rüstung
+(z.\,B. bei manchen natürlichen Rüstungen) gilt auch bei diesen Schußwaffen
+der normale Rüstungsschutz.
+
+\subsection{Auswirkungen und Heilung von erlittenem Schaden}
+
+Eine Figur, die einen \textbf{kritischen Halstreffer} (94--96 auf Tabelle~4.5
+[DFR\,247]) erlitten hat, fällt normalerweise in Ohnmacht, bis die Blutung
+wie beschrieben gestillt wird.
+
+Eine Figur mit \textbf{0\,AP} [DFR\,101] erh"alt \textbf{WM--4} nicht
+nur auf EW:Angriff, sondern auch auf alle EW und WW, die mit
+\textbf{starker k"orperlicher Anstrengung} verbunden sind. WW, bei
+denen die dahinterstehende Handlung sehr einer Abwehr gleicht, können
+auch ganz verfallen.
+
+AP werden auch durch Schlafphasen, die \textbf{k"urze}r sind
+\textbf{als 4\,h}, regeneriert [DFR\,103]. Die regenerierten AP werden
+anhand der bisherigen Regeln \textbf{proportional umgerechnet} auf die
+reduzierte Schlafzeit (1\,h Schlaf bringt also $\frac{\sf 1}{\sf 8}$
+der bei Schlafbeginn fehlenden AP zur"uck).
+
+Es kann passieren, da"s eine Figur v"ollig \textbf{ausgeschlafen} ist,
+aber dennoch viele AP verloren hat. In einem solchen Fall kann der
+Spielleiter gestatten, da"s auch durch echtes \textbf{Ausruhen} in
+tiefer Entspannung und völliger Ruhe AP in reduzierter Geschwindigkeit
+regeneriert werden (und zwar mehr als die 2\,AP, die in [DFR\,103]
+zugestanden werden).
+
+Eine lebensgef"ahrlich verwundete Figur (die also i.\,d.\,R. 3 oder
+weniger LP hat) verliert automatisch \textbf{alle AP} und regeneriert
+keine AP, solange sie als lebensgef"ahrlich verwundet z"ahlt.
+
+Bei der magischen Heilung von \textbf{schweren Verletzungen} reduziert
+jeder durch die Behandlung geheilte LP die ausgew"urfelte Dauer der
+schweren Verletzung um \textbf{einen Tag}. Nichtmagische Behandlung
+verkürzt die Dauer der Verletzung nicht, weil nichtmagische Behandlung
+ohnehin vorausgesetzt wird, damit die angegebene Dauer nicht deutlich
+verlängert wird.
+
+Wird eine Figur mit \textbf{negativen LP} magisch geheilt oder mit
+\emph{Erster Hilfe} behandelt, so reicht es, wenn sie bis zum
+\textbf{Beginn} der entsprechenden Handlung "uberlebt. W"ahrend der
+Zauber- bzw. Behandlungsdauer bleibt sie auf jeden Fall am Leben. Ist
+nach Abschlu"s der Behandlung bzw. des Zaubers die erw"urfelte
+"Uberlebenszeit der Figur abgelaufen, stirbt sie sofort, wenn sie
+durch den Heilzauber bzw. die Behandlung nicht bis auf mindestens
+0\,LP gebracht wurde.
+
+
+\subsection{Gezielte Angriffe}
+
+\subsubsection{Nahkampf}
+
+W"ahrend bei echten kritischen Treffern \textbf{kein LP-Verlust}
+eintreten braucht (allerdings mu"s das Opfer \textbf{AP verlieren})
+[DFR\,243], um die in Tabelle~4.5 beschriebenen Auswirkungen
+hervorzurufen, gilt diese Regel bei gezielten Angriffen
+\textbf{nicht}. Ein gezielter Angriff erzielt nur dann den
+gew"unschten kritischen Schaden, wenn das Opfer \textbf{mindestens
+  1\,LP} verliert. Diese Einschr"ankung gilt nicht, wenn der
+\textbf{EW:Angriff} einen \textbf{kritischen Erfolg} ergeben hat und
+der zweite WW:Abwehr mi"slungen ist. \textbf{Gelingt} allerdings der
+\textbf{zweite WW:Abwehr}, so ist der angerichtete Schaden auf jeden
+Fall nur \textbf{leicht}, selbst wenn der EW:Angriff einen kritischen
+Erfolg ergeben hat.
+
+\emph{Anmerkung: In der Standardregel sind gezielte Hiebe zu
+  m"achtig. Es gibt nur wenige Situationen, in denen es nicht sinnvoll
+  ist, ausschlie"slich mit gezielten Angriffen zu k"ampfen. Der
+  angerichtete AP-Schaden ist z.\,B. genauso gro"s wie bei ungezielten 
+  Hieben, die Chance, einen entscheidenden Treffer zu landen, ist
+  jedoch viel gr"o"ser. Mit den hier vorgenommenen Regl"anderungen
+  wird dieser Mi"sstand dadurch behoben, da"s ein K"ampfer, der einen
+  gezielten Hieb landen will, auf die Chance verzichtet, durch
+  diesen Hieb an anderer Stelle kritisch zu treffen. Durch die
+  Bedingung, da"s kritischer Schaden nur bei LP-Verlust eintritt,
+  werden die verheerenden M"oglichkeiten eines gezielten Hiebs weiter
+  eingeschr"ankt. Ein "`echter"' kritischer Treffer simuliert
+  gewisserma"sen das Zusammentreffen (un)gl"ucklicher Umst"ande, was
+  nicht unbedingt bewu"st herbeizuf"uhren ist. Die M"oglichkeit, durch 
+  gezielte Hiebe effizient gegen stark ger"ustete Gegner vorgehen zu
+  k"onnen, wird durch eine andere Regelerg"anzung hergestellt (s.\,u.).}
+  
+Die Art des kritischen Treffers kann sich der Angreifer gem"a"s der
+entsprechenden Tabelle [DFR\,248] aussuchen. Es gilt jedoch eine
+Einschr"ankung, wenn der Angrifer sich "`100: T"odlicher Treffer"' aussucht.
+Will er einen solchen Hieb landen, mu"s er sich zun"achst aussuchen, gegen
+welche Stelle er den Hieb richtet (z.\,B. Herz oder Kehle). Ist der gezielte
+Hieb erfolgreich und mi"slingen beide WW:Abwehr, dann mu"s dem Angreifer ein
+\textbf{EW:Meucheln} gelingen, um das Opfer zu t"oten. Bei diesem EW
+\textbf{entfällt} die sonst übliche \textbf{WM--Grad des Opfers}, weil die
+bessere Abwehrchance höhergradiger Gegner bereits durch den WW:Abwehr
+berücksichtigt wurde.  Mi"slingt dieser Wurf, wird an der entsprechenden
+Stelle kritischer Schaden angerichtet (z.\,B. Herz: Rumpftreffer 21--35,
+Kehle: Halstreffer 94--96). Dieses Verfahren ist jedoch nur bei ausreichend
+\textbf{menschen"ahnlichen} Kreaturen m"oglich [DFR\,161]. Bei nicht
+menschen"ahnlichen Kreaturen wird der EW:Meucheln durch einen passenden
+anderen EW ersetzt, der f"ur das Wissen des Angreifers "uber die verwundbaren
+Stellen der bek"ampften Kreatur steht. Dies kann z.\,B. bei tierischen Opfern
+\emph{Tierkunde} sein. Gibt es keine passende Fertigkeit, mu"s der Spielleiter
+entsprechend des abgesch"atzten Wissens des Angreifers "uber die angegriffene
+Kreatur einen sinnvollen Erfolgswert festsetzen. 
+
+Spezielle Regeln gelten im \textbf{Drachenkampf} aufgrund der verwundbaren
+Stelle direkt "uber dem Herzen des Drachen.  Selbstverst"andlich sind gezielte
+Hiebe auf diese Stelle nur dann m"oglich, wenn der Angreifer eine recht genaue
+Vorstellung von Existenz und Ort dieser Stelle hat. Ein gezielter Hieb mit
+\textbf{WM+4} auf den zweiten WW:Abwehr hat bei Erfolg lediglich den Vorteil,
+da"s der Schaden mit RK=OR berechnet wird [BES\,58ff].  Kritischer Schaden
+wird nur dann angerichtet, wenn der EW:Angriff einen kritischen Erfolg ergeben
+hat (und der erste WW:Abwehr nicht kritisch erfolgreich und der zweite
+WW:Abwehr nicht normal erfolgreich war), und zwar in diesem Falle
+ausschlie"slich \textbf{21--35: Rumpftreffer}. Ein gezielter Hieb gegen das
+Herz (mit WM+8 auf den zweiten WW:Abwehr) ist nur dann t"odlich, wenn ein
+separater Wurf mit W20 ein Ergebnis liefert, das \textbf{h"oher ist als der
+  Grad des Drachens} (ansonsten wird kritischer Schaden durch Rumpftreffer
+angerichtet, vorausgesetzt es wurde mindestens 1\,LP geraubt). Auf diesen Wurf
+k"onnen WM angewendet werden, die das Wissen des Angreifers "uber die Methode,
+einen Drachen mit einem Schlag zu t"oten, widerspiegelt. Hat der Angreifer
+z.\,B. nur sehr vages Wissen, kann WM--4 angewendet werden. Eine WM+0 steht
+f"ur recht gutes Wissen, wie man es aus ausf"uhrlichen schriftlichen
+Schilderungen oder den genauen Unterweisungen eines Experten gewinnen kann.
+WM+2 (oder WM+4 oder noch mehr) k"onnte erreicht werden, wenn der Angreifer
+schon einmal selber genau beobachten konnte, wie ein Drachen an seiner
+verwundbaren Stelle (oder gar ins Herz) getroffen wurde (oder er diesen
+Angriff sogar selber durchgef"uhrt hat).
+
+Ein gezielter Hieb kann auch benutzt werden, um einen Gegner gezielt
+im offenen Kampf zu \textbf{bet"auben}, ohne ihm ernsthaften Schaden
+zuzuf"ugen. (Nach den normalen Bet"auben-Regeln [DFR\.160ff] ist das
+nicht m"oglich, da der Gegner hierf"ur ahnunglos sein mu"s.) Dazu ist
+ein \textbf{gezielter Hieb auf den Kopf} n"otig (74--80 auf der
+Tabelle~4.5). Erreicht der Hieb sein Ziel, w"urfelt der Angreifer einen
+\textbf{EW:Bet"auben ohne WM--Grad}. \textbf{Mi"slingt} der EW, tritt
+normaler Schaden am Kopf ein, der bei Verlust von mindestens 1\,LP
+kritisch ist wie unter 74--80 in der Tabelle
+beschrieben. \textbf{Gelingt} der Wurf, tritt nur \textbf{leichter}
+Schaden ein und das Opfer wird f"ur \textbf{2W6 Runden bewu"stlos}
+(1W6 Runden, wenn es einen Metallhelm tr"agt). Diese Art des
+Bet"aubens ist wie Meucheln nur gegen hinreichend menschen"ahnliche
+Gegner m"oglich. (Davon unbeschadet bleibt die M"oglichkeit des
+\emph{Faustkampfes} [DFR\,197f].)
+
+Es ist auch m"oglich, einen gezielten Hieb nicht gegen bestimmte
+K"orperteile zu richten, sondern gegen Schwachstellen der R"ustung. Es
+ist nicht m"oglich, auf diesem Wege nat"urliche R"ustungen zu umgehen.
+Der Angriff l"auft genauso ab wie ein normaler gezielter Hieb,
+allerdings wird auf den \textbf{zweiten WW:Abwehr}
+\mbox{\textbf{WM--RK}} angewendet.  Wird der Treffer nicht abgewehrt,
+richtet er normalen \textbf{schweren Schaden} an, wobei jedoch die
+\textbf{R"ustung nicht ber"ucksichtigt} wird. Ein kritischer Erfolg
+beim EW:Angriff kann weiterhin mit einem normalen Erfolg beim zweiten
+WW:Abwehr abgewehrt werden. Wird er allerdings nicht abgewehrt, wird
+der kritische Schaden normal auf Tabelle S5 ausgew"urfelt, dann aber
+ohne Ber"ucksichtigung der R"ustung ausgewertet (es sei denn, das
+f"uhrt zu unsinnigen Ergebnissen).
+
+
+\subsubsection{Fernkampf}
+
+Da gezielte Schüsse und Würfe immer auf wehrlose Figuren erfolgen [DFR\,249],
+erlangt man dabei niemals KEP. Allerdings können AEP vergeben werden für das
+"`kampflose"' Überwinden eines Gegners.
+
+Auch im Fernkampf gilt, da"s mindestens 1\,LP Schaden angerichtet
+werden mu"s, um beim Opfer kritischen Schaden hervorzurufen. Dies gilt 
+jedoch ohne Einschr"ankung. Ein kritischer Erfolg hat die in [DFR\,250] 
+beschrieben Auswirkungen, erm"oglicht jedoch nicht, kritischen Schaden 
+ohne LP-Verlust anzurichten.
+
+Auch im Fernkampf gilt, da"s ein gezielter Schu"s nur dann t"odlich sein kann,
+wenn ein \textbf{EW:Meucheln} gelingt. Ansonsten wird der Schaden wie im
+Nahkampf zu einem passenden kritischen Schaden "`abgemildert"'. Ein Schuß ins
+Herz wird zu einem Rumpftreffer (21--35). Ein Schuß auf die Halsschlagader
+wird zu einem Halstreffer (94--96). Ein Schuß durchs Auge ins Gehirn, wie im
+Beispiel [DFR\,250], erfordert im Gegensatz zu den anderen beschriebenen
+Schüssen nicht nur einen Gesamtwert von 25, sondern von 30. Auch hier tritt
+die tödliche Wirkung nur nach einem erfolgreichen EW:Meucheln ein. Der
+"`abgemilderte"' Schaden ist hier dann aber nicht nur eine Augenverletzung,
+sondern eine schwere Schädelverletzung (97). Wenn ein Ergebnis von 25 bis 29
+erzielt wird, dann ist die Folge des Treffers eine Augenverletzung (98--99).
+Dies gilt natürlich nur für das große Echsenauge. Bei menschlichen Augen
+müßten die nötigen Werte noch erhöht werden.
+
+Zum Drachenkampf gelten sinngem"a"s die gleichen Regeln wie oben geschildert.
+Um die ungerüstete ahndtellergroße Stelle zu treffen, muß ein Gesamtergebnis
+von 25 wie in [BES\,59] beschrieben erzielt werden. Ein Treffer bewirkt in
+jedem Falle, daß kein Rüstungsschutz angerechnet wird. Wird mindestens 1\,LP
+Schaden angerichtet, dann ist dieser Treffer automatisch ein kritischer
+Rumpftreffer. Tödlich ist der Treffer, wenn der Wurf gegen den Grad des
+Drachen wie oben beschrieben gelingt.
+
+\subsection{Improvisierte Waffen}
+
+Eine Zauberölamphore muß \textbf{schwer} treffen, um den Gegner mit
+Zauberöl zu benetzen.  Bei einem leichten Treffen wird nur das
+\textbf{Feld} benetzt (also der Fußboden), auf dem der Gegner steht.
+Ein "`Zauberöl-Molli"' wäre sonst zu gefährlich. Selbst wenn man
+zugesteht, daß so ein Molli sich nur mit einer gewissen (aber durchaus
+hohen) Wahrscheinlichkeit beim Aufprall entzündet, wäre die
+Schadenswirkung in Anbetracht der Tatsache, daß faktisch keine Abwehr
+möglich ist, zu kraß. Außerdem stellt die Abwehr eines
+Fernkampfangriffes u.\,a. das Ausweichen bzw. Ablenken mit dem Schild
+vor, wobei fraglich ist, wie es dabei zu einer Benetzung des
+Abwehrenden mit Zauberöl kommen kann. [DFR\,253f]
+
+
+\section{Kreaturen}
+
+Die Regeln zu der reduzierten AP-Zahl von bestimmten kleinen
+menschenähnlichen Kreaturen werden abgewandelt. Solche kleinen
+Kreaturen besitzen nicht ein bestimmtes Vielfaches ihres Grades
+weniger AP, sondern einen bestimmten Bruchteil der AP, die ein Mensch
+auf gleichem Grad und gleicher Charakterklasse h"atte. Dieser
+Bruchteil wird vor Addieren des AP-Bonus' ber"ucksichtigt. F"ur die
+verschiedenen Rassen ist er hier aufgelistet:
+\begin{description}
+\item[Dunkelzwerg:] 2/3
+\item[Fee:] 1/3
+\item[Gnom:] 1/2
+\item[Halbling:] 2/3
+\item[Kobold:] 1/2
+\item[Vogelmensch:] 5/6
+\end{description}
+
+Bei den Entbehrungsregeln wird der Faktor entsprechend auf die
+gradabhängigen Verluste angewandt.
+
+Zu gezielten Angriffen auf \textbf{Drachen} vergleiche die
+Ausf"uhrungen im vorigen Abschnitt. Ein Bad im \textbf{Drachenblut}
+unter Wirkung des Zaubers \textbf{Hitzeschutz} richtet \textbf{3W6}
+schweren Schaden an.
+
+Ein \textbf{Hyrrbauti} [MDS\,???] explodiert mit "`Zaubern+18"'.
+
+
+
+
+\section{Magie}
+
+\subsection{Zaubern}
+
+Die WM-2 auf Zauber, die weder Grundzauber noch Spezialgebiet eines Magiers
+sind, gelten für sämtliche Zauberkünste, nicht nur für Sprüche im eigentlichen
+Sinne. Dabei ist zu beachten, daß Zauberlieder für Barden als Grundzauber
+zählen ebenso wie sämtliche Zaubersiegel, Runenstäbe, Schutzrunen, Große
+Siegel und Zauberlettern für Thaumaturgen. Solange [MDS] noch nicht erschienen
+ist, gilt die WM-2 allerdings nicht für Beschwörungen.
+
+Gemäß [ARK\,21] ist ein Zauberer auch bei einem 1-sec-Zauber die ganze Runde
+über wehrlos (und kann sich auch nur 1\,m weit bewegen [DFR\,88]). Allerdings
+stört auch ein erfolgreicher Angriff in der Runde nicht die Ausführung des
+1-sec-Zaubers, weil die eigentliche Konzentration auf den Zauber selbst nur
+einen Augenblick dauert und somit nicht gestört werden kann. Natürlich gilt
+auch weiterhin, daß der Zauberer zum Zeitpunkt des Zauberns noch über
+ausreichend viele AP zum Zaubern und ausreichend viele LP zum
+Handlungsfähigsein (i.\,d.\,R. mehr als 3\,LP) verfügen muß.
+
+\subsection{Sekundengenaue Handlungsabläufe}
+
+Im Gegensatz zu einigem, was in [DFR\,91] zu finden ist, wird das Zaubern in
+Aktionsphasen mit sekundengenauem Handlungsablauf hier eindeutiger geklärt:
+
+\begin{itemize}
+\item Da es keinen klaren Rundenbeginn mehr gibt, kann man auch schlecht davon
+  sprechen, daß ein Zauberer sich nicht mehr als 1\,m bewegen darf, wenn er in
+  der "`laufenden Runde"' noch Zaubern will.
+\item Stattdessen gilt folgendes: Jeder Zauber erfordert eine Mindestzeit von
+  10\,sec, in der der Zauberer sich maximal 1\,m bewegen darf und wehrlos
+  ist.
+\item Auch in den 1W6 sec vor Beginn seiner Handlung (nach gescheitertem
+  PW:Gewandtheit) ist der Zauberer bereits wehrlos, wenn die geplante Handlung
+  Zaubern ist.
+\item Daher werden diese 1W6 sec auch auf die 10\,sec Mindestzeit angerechnet
+  (was nur bei 1-sec- und 5-sec-Zaubern relevant ist).
+\item Störungen in den 1W6 sec stören noch nicht die Konzentration des
+  Zauberers. Dies ist nur während der eigentlichen Zauberdauer möglich.
+\item Bei 1-sec-Zaubern kann die Konzentration nicht gestört werden.
+\item Der Zauberer kann nach wie vor (auch während der 1W6 sec) den
+  Zaubervorgang abbrechen, um eine Abwehr machen zu können (muß sich dafür
+  aber wie üblich vor Würfeln des Angriffs entscheiden). Die AP für den Zauber
+  verliert er auch dann, wenn der Abbruch des Zaubervorgangs schon in den 1W6
+  sec erfolgt. 
+\item Wichtger Spezialfall bei 1-sec- und 5-sec-Zaubern: Hier ist es möglich,
+  daß der Zaubervorgang schon vollendet wurde, bevor die 10 sec Mindestzeit
+  verstrichen sind. In diesem Falle ist der Zauberer für den verbelibenden
+  Anteil der 10 sec in jedem Falle wehrlos. Der Zaubervorgang kann ja nicht im
+  Nachhinein abgebrochen werden.
+\end{itemize}
+
+\subsection{Thaumaturgie}
+
+Der Tr"ager eines \textbf{Talismans} sp"urt intuitiv, wenn die Wirkung
+des Talismans vorbei ist. 
+
+\textbf{Zaubersalze} k"onnen in mehreren Dosen ausgestreut werden. Der
+Thaumaturg kann sowohl mehrere Dosen gleichzeitig aktivieren (kostet
+je Dosis 1 AP, es wird nur ein EW:Zaubern durchgef"uhrt) als auch
+kontrolliert eine Dosis nach der anderen aktivieren (eine Dosis pro
+Runde). Eine Dosis Zaubersalz wiegt etwa ein halbes Gramm.
+
+Bei der \textbf{Herstellung von Zaubermitteln} k"onnen auch mehrere
+Anwendungen in einem Arbeitsgang hergestellt werden, wenn gen"ugend
+Ausgangsmaterial vorliegt. Allerdings sollte die Anzahl
+herzustellender Anwendungen innerhalb vern"unftiger Grenzen bleiben,
+wie sie sich aus technischen oder rituellen Gr"unden ergeben k"onnten.
+(Um den \emph{sense of wonder} nicht aus den Augen zu verlieren und
+die Herstellung von Zaubermitteln zum rein (spiel-)technischen Vorgang
+herabsinken zu lassen, ist es ohnehin sinnvoll, die
+Herstellungsprozedur genauer auszuarbeiten. Dabei ergeben sich die
+genannten Grenzen ganz von selbst. Im Extremfall ist ein Zaubermittel
+einmalig, weil es schon bei der Zubereitung f"ur eine bestimmte
+Situation oder Person angepa"st werden mu"s. Dies w"are z.\,B. bei einem
+Liebestrank sehr gut denkbar. Die fantasievolle Ausarbeitung tr"agt
+dann ihren Teil zum Rollenspiel bei.)
+
+\textbf{Schutzrunen} [DFR\,215] "`bemerken"' den wahren Willen ihres
+Besitzers ganz genau. Die in den FAQ geschilderten "`legitimen
+Tricks"' sind nicht erlaubt. Wenn dem Besitzer in einem bestimmten
+Moment lieber ist, daß das Opfer den geschützten Gegenstand berührt,
+als daß es ihn nicht berührt, dann zündet die Schutzrune auch nicht.
+
+In ein \textbf{Gro"ses Siegel} kann der Zauberer beliebig viele seiner
+AP investieren. Dies ist dann von Bedeutung, wenn die AP-Kosten eines
+Zaubers von Anzahl und Grad der Opfer abh"angen.
+
+
+\subsection{Beschw"orungen}
+
+\emph{Anmerkung: Der Regelband \emph{Meister der Sphären} ist noch
+  nicht erschienen. Daher beziehen sich die Angaben zu Beschwörungen
+  noch auf die 3.  Auflage der Midgardregeln.}
+
+Das \textbf{Verl"angern} ist nur m"oglich, wenn das beschworene Wesen
+sich in maximal 50\,m Umkreis um den Beschw"orer aufh"alt
+(Kommunikationsdistanz).
+
+Ein kritischer Fehler beim \textbf{Tor schaffen} f"uhrt dazu, da"s das
+Tor zu einem zuf"allig ausgew"ahlten anderen geeigneten Hexagon
+f"uhrt. Ist so ein Hexagon nicht vorhanden, hat ein kritischer Fehler
+keinen Effekt. Der Zaubernde bemerkt (wie grunds"atzlich immer), da"s
+er einen kritischen Fehler gemacht hat. Ein EW:Resistenz gegen sich
+selbt wird nicht durchgef"uhrt (da es sich formal um eine Beschw"orung
+und nicht um einen Zauberspruch handelt).
+
+\subsection{Zauberlieder}
+
+Es gibt Zauberlieder, die erst wirken, wenn sie eine gewisse Zeit
+gespielt werden. Bis zu diesem Zeitpunkt sind die potentiellen Opfer
+zwar schon in den Bann der Musik gezogen, sie k"onnen aber durchaus
+gegen den Barden vorgehen, wenn die Wirkungsart des Liedes das nicht
+ausschließt und sie von der Gefahr wissen, die vom Spiel des Barden
+ausgeht. Sinngemäß gilt entsprechendes für verwandte Magieformen
+(Tänze etc.).
+
+\subsection{Einzelne Spr"uche}
+
+F"ur das Zaubersiegel \textbf{Beeinflussen} gelten die gleichen
+Sonderregeln wie f"ur das Siegel \emph{Anziehen}.
+
+Beim \textbf{Blitzeschleudern} wird der WW:Resistenz für jeden Blitz separat
+gewürfelt, auch wenn mehrere Blitze sich gegen dasselbe Opfer richten.
+
+Das Zaubersiegel \textbf{Dinge wiederfinden} wird ausnahmsweise nicht
+durch Sichtkontakt aktiviert, sondern beim Anpeilen. Jedes Siegel kann 
+nur einmal angepeilt werden und verschwindet dann. Es ist m"oglich,
+mehrere Siegel auf einem Gegenstand anzubringen, die getrennt
+voneinander angepeilt werden k"onnen. Zum Aufbringen des Siegels auf
+einen magischen Gegenstand und für die Wirkung des Siegels ist es
+unerheblich, ob der Gegenstand schon längere Zeit vom Thaumaturgen
+besessen wurde. (Dies ist im Prinzip genau so in den FAQ geregelt,
+allerdings sehr verquer formuliert.)
+
+Wird \textbf{Entgiften} auf Fl"ussigkeiten angewandt, die in großer
+Menge einheitlich vergiftet vorliegen, kann pro Anwendung maximal
+1\,hl Fl"ussigkeit entgiftet werden.
+
+Das \textbf{Erkennen der Aura} spricht auf Zauberwerk an, wenn es eine ABW von
+\emph{höchstens} 10 hat (nicht \emph{mindestens}).
+
+Das Zaubersiegel \textbf{Erkennen von Leben} kann der Thaumaturg auf
+sich und andere anwenden, indem er das Siegel auf die Schl"afe des zu
+Verzaubernden auftr"agt.
+
+Der \textbf{Funkenregen} verpufft wirkungslos, wenn sein Primäropfer
+nicht an die Illusion glaubt (weil der WW:Resistenz geglückt ist oder
+der Zauberer sich selbst verzaubert hat).
+
+Beim \textbf{Heilen von Krankheiten} kann es bei mißglückter Heilung
+ansteckender Krankheiten genauso wie beim \emph{Erkennen von
+  Krankheiten} zu einer Ansteckung des Zauberers kommen. Der Zauber
+eignet sich nicht zur Heilung von Geisteskrankheiten (dafür gibt es
+\emph{Seelenheilung}). Besonders schwer zu heilende Krankheiten können
+sich in einem Zauberduell wehren (wie bei \emph{Seelenheilung}). Der
+Zaubern-Wert der Krankheit hängt von ihrer Schwere ab. Ein verlorenes
+Zauberduell darf wie üblich wiederholt werden.
+
+Das Zaubersiegel \textbf{St"arke} wird auf einen Arm oder ein Bein des 
+zu Verzaubernden aufgetragen (wirkt aber dennoch auf den ganzen
+K"orper). Auch bei Stärkesiegeln kann immer nur ein Siegel pro Runde ausgelöst
+werden. Es kann also nur ein Wesen pro Runde verzaubert werden.
+
+Die durch einen Runenstab \textbf{Stille} erzeugte Zone der Stille
+bewegt sich nicht mit dem Zauberer, sondern mit dem Runenstab.
+
+Der \textbf{Todeshauch} eines Runenstabes breitet sich 1min lang vom
+Stab aus aus. Der Stab kann also w"ahrend der Wirkungsdauer
+weggeworfen oder -geschossen werden, um an seinem Zielort den
+Giftnebel auszubreiten.
+
+Die mir dem Zaubersiegel \textbf{Unsichtbarkeit} verzauberten Personen 
+m"ussen sich auf den Zauber konzentrieren, um unsichtbar zu bleiben.
+
+Der Runenstab \textbf{Wasserstrahl} wirkt nur solange, wie der
+Anwender den Runenstab in der Hand behält und sich auf den Strahl
+konzentriert.
+
+Das Zaubersiegel \textbf{Zauberschlo"s} verschwindet, sobald es zu
+wirken anf"angt.
+
+
+
+\section{Sonstiges}
+
+\subsection{Geld, Gold, Edelsteine\dots}
+Die Geldmengen bei \textsc{Midgard} wirken oft astronomisch, die
+Kaufkraft des Goldes l"acherlich. Als Ausweg wird h"aufig eine
+"`W"ahrungsreform"' gew"ahlt. Hier wird ein anderer Weg gegangen, der nur
+wenige "Anderungen ben"otigt, aber einiger Erl"auterungen bedarf.
+
+Die (Standard-)Geldst"ucke sind etwa so gro"s wie ein Centst"uck.
+KS bestehen haupts"achlich aus Kupfer, SS aus Silber, GS aus 60\,\%\ 
+Gold und 40\,\%\ Silber. Ein GS wiegt dann 3,2g, ein SS 2,1, ein KS
+1,8g.  (Also nicht wie bei [DFR\,323] angegeben, wo ein GS so gro"s
+wie ein 50-Cent-St"uck ist und 10g wiegt, was übrigens auch nicht
+konsistent ist, denn so eine Münze wöge 14,3g.)  Damit sind die
+\textbf{Gewichtsprobleme} stark reduziert. Edelsteine, Schmuck und
+sonstige Wertsachen k"onnen au"serdem als Zahlungsmittel mit h"oherer
+Wertdichte dienen.  Allerdings bedarf es realistisch betrachtet hoher
+Qualifikation, den Wert dieser Wertgegenst"ande zuverl"assig zu
+sch"atzen. In der Regel werden SpF durch ihre Unwissenheit recht hohe
+Wertverluste sowohl beim Kauf wie beim Verkauf erleiden.
+
+\begin{tabular}{|p{16.5cm}|}
+  \hline
+  \textbf{Beispiel:} \emph{Die Gruppe hat von ihrem letzten
+    Abenteuer eine ganze Truhe mit GS mitgebracht. Bei einem
+    Edelsteinh"andler kaufen sie f"ur die rund 10.000\,GS einen
+    wundersch"onen gro"sen Edelstein, der in Wirklichkeit aber nur
+    6.000\,GS wert ist. Ein paar Monate und viele
+    Kilometer sp"ater wollen sie den Edelstein wieder zu Geld machen 
+    und bieten ihn einem H"andler f"ur 11.000\,GS an. Der H"andler
+    bemerkt sofort, da"s die Gruppe keine Ahnung hat, und erkl"art
+    ihnen freundschaftlich, da"s sie sich "ubers Ohr hauen
+    lassen haben und da"s ihr Stein keine 3.000\,GS wert ist, er
+    aber als echter Freund bereit ist, ihnen 3.500\,GS zu
+    zahlen. -- N"achstesmal sind die SpF kl"uger und ziehen einen
+    unabh"angigen Experten zurate. Sie werden nicht mehr "ubers Ohr
+    gehauen, aber der Experte verlangt f"ur seine Dienste eine
+    Pr"amie von 5\,\%\ des Sch"atzwertes.}\\
+  \hline
+\end{tabular}
+
+Es empfiehlt sich, derartige Situationen nur dann in dieser Weise
+auszuspielen, wenn es die Spielsituation verlangt. Ansonsten sollten
+pauschal Abz"uge vorgenommen werden. Im Endeffekt mu"s nur klarwerden,
+da"s Transport und Tausch von Geld und Wertsachen nicht ohne Risiko
+und Verlust m"oglich ist. Auch W"ahrungsprobleme (ein albischer Oring
+ist im Ausland lange nicht so viel Wert wie ein valianischer Orobor;
+eine eventuell vorkommende W"ahrung, deren Wert nicht ann"ahernd
+durch den Materialwert gedeckt ist, ist in L"andern, wo diese
+W"ahrung nicht bekannt ist, gar nichts wert, usw.) sollten bewu"st
+sein, ohne sie in all ihren nervenden Details auszuspielen. Die
+Vorteile der \emph{Gesch"aftst"uchtigkeit} beruhen u.\,a.  darauf,
+da"s die beschriebenen Tausch-, An- und Verkaufsverluste reduziert
+werden. F"ur nicht explizit ausgespielte Lernphasen sind die
+beschriebenen Verluste einer der Gr"unde daf"ur, warum die Lernkosten
+so hoch erscheinen (s.\,o.). In Lernphasen sind also keine weiteren
+Abz"uge aufgrund von Tauschverlusten mehr erforderlich.
+
+Der Materialwert der M"unzen ist etwa halb so hoch wie ihr Nennwert.
+So kann man den Materialwert der Metalle absch"atzen. 1\,kg Silber ist
+ca. 24\,GS wert (irdischer Wert: 1961 21,20\,\euro, 1990 86\,\euro).
+1\,kg der M"unzlegierung, aus der GS bestehen (60\,\%\ Gold, 40\,\%\ 
+Silber), sind ca. 160\,GS wert. Das Silber davon hat einen Wert von
+ca. 10\,GS, bleiben f"ur das Gold 150\,GS. Allerdings wird das Gold
+durch Aufreinigung wertvoller. "`Normales"' \textbf{Handelsgold} hat
+einen Goldanteil von ca. 90\,\%. 1\,kg dieses Goldes aus einer in
+irgendeiner Form zertifizierten Quelle hat einen Wert von gut
+\textbf{200\,GS}. Hochaufgereinigtes und als solches zertifiziertes
+Feingold (\textbf{Alchimistengold}) hat einen Wert von mindestens
+\textbf{500\,GS je kg}. (Zum Vergleich: Der irdische Goldpreis
+unterliegt starken Schwankungen. Bis zum 17.3.1968 war der Goldpreis
+gesetzlich festgelegt auf 574\,\euro/kg. Nach der Freigabe schwankte er
+extrem stark mit dem H"ohepunkt Anfang 1980 bei fast 10.000\,\euro/kg.
+1990 lag der Goldpreis bei ca. 6.500\,\euro/kg.) Stellt man sich vor,
+da"s ein GS etwa einem Gegenwert von 5\,\euro\ entspricht, so erh"alt
+man einen Goldpreis, der leicht unter dem irdischen liegt, und einen
+Silberpreis, der leicht "uber dem irdischen liegt, eine Relation, die
+im Hinblick auf die Aussage, da"s Gold auf \textsc{Midgard} h"aufiger
+ist als auf der Erde, durchaus konsistent erscheint. Allerdings ist
+mit derartigen Vergleichen "au"serst vorsichtig umzugehen. Die Rolle
+des Geldes in einer altert"umlichen Fantasywelt ist nur sehr bedingt
+vergleichbar mit der, die es in unserer heutigen Welt spielt. In einer
+bestimmten Situation kann die Kaufkraft eines GS der eines einzigen
+Euro (oder noch weniger, schlie"slich kann man weder Geld noch Gold
+essen) entsprechen oder auch der von 100\,\euro.
+
+
+
+\subsection{Sex, Liebe, Leidenschaft\dots}
+Mit der 4.~Auflage des Regelwerks sind die Stellen, die den Eindruck erwecken,
+als ob \textsc{Midgard} nur Heterosexulit"at kenne, deutlich weniger geworden,
+aber leider noch nicht ganz verschwunden (z.\,B. [DFR\,32], [ARK\,179],
+[BES\,323]). So ist jetzt etwas klarer, daß es natürlich auch Homo- und
+Bisexualit"at (und wohl auch Asexualit"at) gibt. Wenn derartige
+zwischenmenschliche Angelegenheiten regeltechnisch behandelt werden m"ussen,
+so geht der Spielleiter flexibel vor und vergibt passende WM auf entsprechende
+W"urfe. Es ist immer m"oglich, da"s ein Charakter gegen seine bevorzugte
+sexuelle Orientierung handelt, wenn die Umst"ande entsprechend extrem sind.
+
+\begin{tabular}{|p{16.5cm}|}
+  \hline
+  \textbf{Beispiel:} \emph{Die schwarze Hexe
+    Xenia macht sich an Ipak, den gutaussehenden Gl"ucksritter der
+    Abenteurergruppe, heran. Sie hat vor, die Gruppe zu
+    schw"achen, indem sie Ipak mittels eines Liebeszaubers an sich
+    binden und in einem g"unstigen Moment beseitigen wird. Was sie
+    nicht wei"s: Ipak ist schwul.  Verf"uhrungsversuche und auch
+    Liebeszauber des weiblichen Geschlechts werden nicht v"ollig
+    aussichtslos sein (ein Gl"ucksritter bleibt ein Gl"ucksritter
+    und ist immer offen f"ur neuartige Erfahrungen, Xenia ist
+    obendrein extrem gutaussehend und charismatisch), aber doch um
+    ein geh"origes Ma"s erschwert. Der Spielleiter entscheidet
+    also, Ipak WM+8 auf seinen WW:psyZR zu gew"ahren. -- Nachdem
+    Xenia von Ipak einen freundschaftlichen Korb erhalten hat,
+    probiert sie es mit dem zweiten m"annlichen Mitglied der
+    Gruppe, dem Priester Fares. Fares lebt gem"a"s den
+    Vorschriften seiner Glaubensgemeinschaft streng keusch. Da er
+    wahrhaft gottesf"urchtig ist, ist dies nicht nur ein
+    Lippenbekenntnis, sondern seine tiefste "Uberzeugung. Xenia
+    wird es mit ihm "ahnlich schwer haben wie mit Ipak, selbst
+    wenn Fares eigentlich heterosexuell ist (was aber aufgrund des
+    "uberzeugten Z"olibats relativ unwichtig ist). Eine tiefe
+    "Uberzeugung wiegt genauso schwer wie eine biologische oder
+    psychische Veranlagung.}\\
+  \hline
+\end{tabular}
+
+\appendix
+
+\section*{Anhang}
+
+\section{Abstufungen der Handlungsunf"ahigkeit}
+
+Zur besseren "Ubersicht "uber die m"oglichen Einschr"ankungen der
+Handlungsf"ahigkeit dient Tabelle~\ref{tab:handlung}.
+
+\begin{table}[htbp]
+{\small
+  \begin{center}
+    \begin{tabular}{|c|p{6cm}|p{8cm}|}
+      \hline
+      \textbf{Stufe} & \textbf{Folgen} & \textbf{Situation}\\
+      \hline \hline
+      0 & voll handlungsf"ahig &
+      \begin{minipage}{8cm}
+        \vspace*{1mm}
+        \begin{itemize}
+        \item Standardsituation
+        \end{itemize}
+        \vspace*{1mm}
+      \end{minipage}\\
+      \hline
+      1 & automatischer Verlust der Initiative &
+      \begin{minipage}{8cm}
+        \vspace*{1mm}
+        \begin{itemize}
+        \item leichte "Uberraschung
+        \end{itemize}
+        \vspace*{1mm}
+      \end{minipage}\\
+      \hline
+      2a & kein Angriff möglich&
+      \begin{minipage}{8cm}
+        \vspace*{1mm}
+        \begin{itemize}
+        \item Schock nach kritischem Treffer 11--20
+        \item spezielle Situation im Faustkampf [DFR\,197f]
+        \end{itemize}
+        \vspace*{1mm}
+      \end{minipage}\\
+      \hline
+      2b & Angreifer erh"alt WM+4 auf Angriff&
+      \begin{minipage}{8cm}
+        \vspace*{1mm}
+        \begin{itemize}
+        \item Nahkampf: Opfer am Boden liegend (Opfer erhält WM--4 auf
+          eigene Angriffe)
+        \item Nahkampf: Opfer flieht panisch
+        \item Fernkampf: Angreifer konnte sorgf"altig zielen
+        \item Opfer im Handgemenge
+        \end{itemize}
+        \vspace*{1mm}
+      \end{minipage}\\
+      \hline
+      3 & keine Handlung au"ser Abwehr, WM--4 auf Abwehr &
+      \begin{minipage}{8cm}
+        \vspace*{1mm}
+        \begin{itemize}
+        \item schwere "Uberraschung
+        \item die erste Runde, in der man während der Aufwachzeit
+          [DFR\,108] angegriffen wird
+        \item w"ahrend 30\,min (bzw. 60\,min) nach kritischem Kopftreffer 74--80
+        \end{itemize}
+        \vspace*{1mm}
+      \end{minipage}\\
+      \hline
+      4 & keine Abwehr, Angreifer erh"alt im Nahkampf und Handgemenge WM+4 &
+      \begin{minipage}{8cm}
+        \vspace*{1mm}
+        \begin{itemize}
+        \item "`klassische"' Wehrlosigkeit [DFR\,95]
+        \item Opfer hat 0\,AP (Opfer
+          erh"alt auf eigene Angriffe WM--4 [DFR\,101])
+        \item Opfer hat 1-3\,LP (Opfer kann keine Handlungen mehr
+          ausf"uhren, B4)
+        \item Opfer hat 0\,LP (Opfer kann keine Handlungen mehr
+          ausf"uhren, B0)
+        \item kritische Beinverletzung (B6)
+        \item Ahnungslosigkeit (meucheln möglich)
+        \item Opfer wird in Schach gehalten [DFR\,95]
+        \end{itemize}
+        \vspace*{1mm}
+      \end{minipage}\\
+      \hline
+      5 & Angreifer trifft automatisch schwer &
+      \begin{minipage}{8cm}
+        \vspace*{1mm}
+        \begin{itemize}
+        \item keine konkrete Regel bekannt, aber denkbar als Spielleiterentscheidung
+        \end{itemize}
+        \vspace*{1mm}
+      \end{minipage}\\
+      \hline
+      6 & Angreifer trifft automatisch kritisch -- bei EW:Meucheln (mit
+      WM--Grad, wenn Reflexe noch eine Rolle spielen können) wird Opfer get"otet&
+      \begin{minipage}{8cm}
+        \vspace*{1mm}
+        \begin{itemize}
+        \item v"ollige Bewegungsunf"ahigkeit des Opfers
+        \item Opfer bewußtlos
+        \item Opfer schläft (i.\,d.\,R. muß dem Angreifer ein
+          EW:Schleichen (vgl. Anmerkungen zu \emph{Schleichen} oben)
+          gelingen, damit er nah genug an das Opfer herankommt, um
+          diesen Angriff durchzuführen -- erwacht das Opfer durch
+          mißglücktes Schleichen (EW mißglückt, WW gelingt), tritt
+          Stufe 3 ein)
+        \end{itemize}
+        \vspace*{1mm}
+      \end{minipage}\\
+      \hline
+      7 & automatischer Tod &
+      \begin{minipage}{8cm}
+        \vspace*{1mm}
+        \begin{itemize}
+        \item v"ollige Bewegungsunf"ahigkeit des Opfers, Angreifer ist 
+          ungest"ort und hat gen"ugend Zeit (in der Regel au"serhalb
+          von Aktionsphasen)
+        \end{itemize}
+        \vspace*{1mm}
+      \end{minipage}\\
+      \hline
+    \end{tabular}
+    \caption{Stufen der Handlungsunf"ahigkeit}
+    \label{tab:handlung}
+  \end{center}
+}
+\end{table}
+
+
+\end{document}
+
+\begin{tabular}{|p{16.5cm}|}
+  \hline
+  \textbf{Beispiel:} \emph{}\\
+  \hline
+\end{tabular}
+
