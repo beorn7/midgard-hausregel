@@ -1,11 +1,13 @@
 \documentclass[10pt,a4paper,germanpar]{article}
-\usepackage{german,anysize,eurosym}
+\usepackage{german,anysize,eurosym,tabu}
 %\usepackage[T1]{fontenc}
 \usepackage{helvet}
 %\usepackage{mathphv}
 \usepackage[latin1]{inputenc}
 
 \renewcommand{\familydefault}{phv}
+
+\renewcommand{\arraystretch}{1.5}
 
 \marginsize{2.0cm}{2.0cm}{1.5cm}{1.5cm}
 \setlength{\footnotesep}{5mm}
@@ -15,7 +17,7 @@
 
 \author{Bj"orn~Rabenstein\\ bjoern@rabenste.in}
 \title{Hausregeln f"ur
-  \textsc{Midgard} (4. Auflage)\\Version 2.10}
+  \textsc{Midgard} (4. Auflage)\\Version 2.11}
 
 \begin{document}
 
@@ -67,19 +69,27 @@ Nachvollziehbarkeit rechtfertigen, nicht jedoch mit einem Gewinn an
 "`Realismus"'.
 
 Diese Klarstellungen, Änderungen und Ergänzungen der offiziellen
-Midgardregeln sind den Erfahrungen un\-zäh\-liger Midgardsitzungen
+\textsc{Midgard}-Regeln sind den Erfahrungen un\-zäh\-liger Midgardsitzungen
 seit 1987 entwachsen, insbesondere denen meiner in unterschiedlichen
 Zusammensetzungen seit 1989 mehr oder weniger regelmäßig tagenden
 "`Hauptrunde"', in der ich häufig die Aufgabe des Spielleiters
 übernommen habe. Aufgeschrieben wurden sie von mir, aber ich hege die
 Hoffnung, daß sie dem Gruppenkonsens Ausdruck verleihen.
 
-Seit Version~2.0 beziehen sich diese Regelergänzungen auf die
-4.~Auflage des Midgard-Regelwerks. Verweise auf das Regelwerk werden
-in der Form [XXX\,nnn] gegeben, wobei XXX ein Kürzel für das jeweilige
-Buch ist, während nnn die Seitenzahl angibt. Folgende Kürzel finden
-Verwendung: DFR = Das Fantasy-Rollenspiel, ARK = Das Arkanum, KOM =
-Das Kompendium, BES = Das Bestiarium, MDS = Meister der Sphären.
+Seit Version~2.0 beziehen sich diese Hausregeln auf die 4.~Auflage des
+\textsc{Midgard}-Regelwerks. (Die 5.~Auflage hat in meinen Runden noch
+nicht Fuß gefaßt.) Verweise auf das Regelwerk werden in der Form
+[XXX\,nnn] gegeben, wobei XXX ein Kürzel für das jeweilige Buch ist,
+während nnn die Seitenzahl angibt. Folgende Kürzel finden Verwendung:
+DFR = Das Fantasy-Rollenspiel, ARK = Das Arkanum, KOM = Das
+Kompendium, BES = Das Bestiarium, MDS = Meister der Sphären. Der
+Begriff \emph{Figur} (als "`altdeutsche"' Version von englisch
+\emph{Character} oder eingedeutscht \emph{Charakter}) ist in den
+jüngeren \textsc{Midgard}-Auflagen irgendwie der Vergessenheit anheim
+gefallen, erfreut sich hier aber noch reger Benutzung. Also: SpF =
+Spielerfigur = \emph{player character} = PC = "`Abenteurer"' =
+"`Held"'. NSpF = Nichtspielerfigur = \emph{non-player character} = NPC.
+
 
 \section{Druckfehler}
 
@@ -706,11 +716,25 @@ gewonnen hat, dreht sich zuletzt).
 Solange Aktionsphasen wie in [DFR\,86ff] beschrieben \textbf{rundenweise}
 abgehandelt werden, gelten folgende Anmerkungen:
 
-Handlungen werden (zumindestens im Prinzip) \textbf{gleichzeitig
-  angesagt} und dann in \textbf{Handlungs-
-  bzw. Angriffsrangreihenfolge durchgef"uhrt}. Eine angesagte Handlung
-kann im Nachhinein \textbf{nicht mehr ge"andert} werden (mit der
-Ausnahme einiger spezieller Situationen, in denen die Regeln dies
+Die Entscheidung, welche Handlungen die Figuren in einer Runde
+ausführen, wird (zumindestens im Prinzip) \textbf{gleichzeitig} nach
+Abschluß der Bewegungen getroffen. (In der Praxis ist es am
+einfachsten, wenn der Spielleiter zunächst heimlich die Handlungen für
+die NSpF festlegt, woraufhin dann die Spieler für ihre Figuren
+entscheiden. Sollte es in seltenen Fällen für einen "`realistischen"'
+Spielablauf nötig sein, kann man die Aktionen auch geheim auf Zetteln
+notieren und dann gleichzeitig offenlegen.)
+
+Als Teil der Handlungsentscheidung kann eine Figur auch freiwillig
+ihren Handlungsrang so reduzieren, daß sie mit ihrer Handlung zuletzt
+an die Reihe kommt. Wollen das mehrere Figuren, kommen sie alle am
+Ende der Runde in \textbf{umgekehrter} Gw-Reihenfolge an die Reihe
+(höchste Gw zuletzt).
+
+Die so festgelegten Handlungen werden dann in \textbf{Handlungs-
+  bzw. Angriffsrangreihenfolge durchgef"uhrt}. Eine festgelegte
+Handlung kann im Nachhinein \textbf{nicht mehr ge"andert} werden (mit
+der Ausnahme einiger spezieller Situationen, in denen die Regeln dies
 explizit erlauben). Allerdings ist es m"oglich, auf die Ausübung der
 angesagten Handlung zu \textbf{verzichten}, wenn man an der Reihe
 ist. (Manchmal hat man auch gar keine andere Wahl\dots)
@@ -1577,133 +1601,122 @@ sexuelle Orientierung handelt, wenn die Umst"ande entsprechend extrem sind.
 
 \section*{Anhang}
 
-\section{Abstufungen der Handlungsunf"ahigkeit}
+\section{Handlungsunf"ahigkeit und Wehrlosigkeit}
 
-Zur besseren "Ubersicht "uber die m"oglichen Einschr"ankungen der
-Handlungsf"ahigkeit dient Tabelle~\ref{tab:handlung}. Zu beachten ist,
-daß die Liste nicht streng linear ist. Eine höher nummerierte
-Abstufung ist nicht unbedingt in jeder Hinsicht eine stärkere
-Beeinträchtigung. Insbesondere ist regeltechnisch Abwehr keine
-Handlung. Handlungsunfähigkeit impliziert also nicht notwendigerweise
-Wehrlosigkeit, und auch nicht umgekehrt. Bei der "`klassischen"'
-Wehrlosigkeit, wie sie z.B. einsetzt, wenn das Opfer keine AP mehr
-hat, ist das Opfer durchaus noch handlungfähig (wenn auch
-möglicherweise mit WM--4).
+Abwehr ist regeltechnisch keine Handlung. Handlungsunf"ahigkeit und
+Wehrlosigkeit sind daher unterschiedliche Konzepte, auch wenn in der
+Praxis beide häufig gleichzeitig auftreten.
+
+Eingeschränkte Handlungsfähigkeit führt zu negativer WM auf die
+eigenen Handlungen. Bei Handlungsunfähigkeit kann die Figur gar keine
+Handlungen mehr durchführen.
+
+Eingeschränkte Fähigkeit zur Abwehr führt zu negativer WM auf die
+eigene Abwehr oder zu positiver WM auf den Angriff des Gegners (wobei
+bei gleichem Betrag der WM die negative WM auf die Abwehr weniger
+Auswirkungen hat als die positive WM auf den Angriff). Bei
+Wehrlosigkeit kann die Figur gar keine Abwehr mehr
+durchführen. Zusätzlich erhält der Gegner WM+4 auf seine Angriffe oder
+trifft in extremen Fällen sogar automatisch kritisch.
+
+Tabelle \ref{tab:handlung} zeigt beispielhaft, wie Spielsituationen
+auf diesen beiden Achsen eingeordnet sind.
+
+\pagebreak
 
 \begin{table}[htbp]
-  {\small \begin{center} \begin{tabular}{|c|p{6cm}|p{8cm}|} \hline
-        \textbf{Stufe} & \textbf{Folgen} & \textbf{Situation}\\
-        \hline \hline 0 & voll handlungsf"ahig & \begin{minipage}{8cm}
-          \vspace*{1mm} \begin{itemize} \item
-            Standardsituation \end{itemize} \vspace*{1mm}
-        \end{minipage}\\
-        \hline 1 & automatischer Verlust der Initiative
-        & \begin{minipage}{8cm} \vspace*{1mm} \begin{itemize} \item
-            leichte "Uberraschung \end{itemize} \vspace*{1mm}
-        \end{minipage}\\
-        \hline 2a & kein Angriff möglich (und i.\,d.\,R. auch keine
-        anderen Handlungen außer Abwehr -- Handlungsunfähigkeit im
-        eigentlichen Sinne)&
-      \begin{minipage}{8cm}
-        \vspace*{1mm}
-        \begin{itemize}
-        \item Schock nach kritischem Treffer 11--20, Zerstörung des
-          Thaumagrals oder Peitschenhieb
-        \item spezielle Situation im Faustkampf [DFR\,197f]
-        \item Opfer wird im Handgemenge festgehalten (2a und 2b treffen
-          hier gleichzeitig zu)
-        \end{itemize}
-        \vspace*{1mm}
-      \end{minipage}\\
+{\footnotesize
+  \begin{center} 
+    \begin{tabu}{|p{2.4cm}||p{4.5cm}|p{4.3cm}|p{4.4cm}|}
       \hline
-      2b & Angreifer erh"alt WM+4 auf Angriff&
-      \begin{minipage}{8cm}
-        \vspace*{1mm}
-        \begin{itemize}
-        \item Nahkampf: Opfer am Boden liegend (Opfer erhält WM--4 auf
-          eigene Angriffe)
-        \item Nahkampf: Opfer flieht panisch
-        \item Fernkampf: Angreifer konnte sorgf"altig zielen
-        \item Opfer im Handgemenge
-        \end{itemize}
-        \vspace*{1mm}
-      \end{minipage}\\
+      Einschränkung der & \multicolumn{3}{c|}{Einschränkung der Handlungsfähigkeit}\\
+      Abwehrbereitschaft & keine & WM--4 auf Angriff & keine Handlung \\
       \hline
-      3 & keine Handlung au"ser Abwehr, WM--4 auf Abwehr &
-      \begin{minipage}{8cm}
-        \vspace*{1mm}
-        \begin{itemize}
-        \item schwere "Uberraschung
-        \item die erste Runde, in der man während der Aufwachzeit
-          [DFR\,108] angegriffen wird
-        \item w"ahrend 30\,min (bzw. 60\,min) nach kritischem Kopftreffer 74--80
-        \end{itemize}
-        \vspace*{1mm}
-      \end{minipage}\\
       \hline
-      4 & keine Abwehr, Angreifer erh"alt im Nahkampf WM+4 (diese WM
-      gibt es im Handgemenge ohnehin und weiterhin, siehe Stufe 2b)&
-      \begin{minipage}{8cm}
-        \vspace*{1mm}
-        \begin{itemize}
-        \item "`klassische"' Wehrlosigkeit [DFR\,95]
-        \item Opfer hat 0\,AP (Opfer
-          erh"alt auf eigene Angriffe WM--4 [DFR\,101])
-        \item Opfer hat 1-3\,LP (Opfer kann keine Handlungen mehr
-          ausf"uhren, B4)
-        \item Opfer hat 0\,LP (Opfer kann keine Handlungen mehr
-          ausf"uhren, B0)
-        \item kritische Beinverletzung (B6)
-        \item Ahnungslosigkeit (\emph{Meucheln} möglich)
-        \item Opfer wird in Schach gehalten [DFR\,95]
-        \end{itemize}
-        \vspace*{1mm}
-      \end{minipage}\\
+      keine &
+      \begin{itemize}
+      \item Standardsituation
+      \item leichte Überraschung (Opfer verliert Initiative)
+      \end{itemize} &
+      \begin{itemize}
+      \item spontaner Angriff
+      \item Rundumschlag
+      \item Opfer hat weniger als die Hälfte LP (WM--2)
+      \end{itemize} & 
+      \begin{itemize}
+      \item w"ahrend 30\,min (bzw. 60\,min) nach kritischem Kopftreffer 74--80
+      \item Schock nach kritischem Treffer 11--20, Zerstörung des
+        Thaumagrals oder Peitschenhieb
+      \item spezielle Situation im Faustkampf [DFR\,197f]
+      \end{itemize} \\
       \hline
-      5 & Angreifer trifft automatisch schwer &
-      \begin{minipage}{8cm}
-        \vspace*{1mm}
-        \begin{itemize}
-        \item keine konkrete Regel bekannt, aber denkbar als Spielleiterentscheidung
-        \end{itemize}
-        \vspace*{1mm}
-      \end{minipage}\\
+      WM--4 auf Abwehr &
+      \begin{itemize}
+      \item Angriff mit zweihändiger Hiebwaffe oder schlagender
+        Stangenwaffe (Abw. WM--2)
+      \end{itemize}      & 
+      \begin{itemize}
+      \item überstürzter Angriff (Ang. WM--6, Abw. WM--2)
+      \item Kampf gegen Unsichtbare (Ang. WM--2)
+      \end{itemize}      &
+      \begin{itemize}
+      \item schwere "Uberraschung
+      \item die erste Runde, in der Opfer während der Aufwachzeit
+        [DFR\,103] angegriffen wird
+      \end{itemize} \\
       \hline
-      6 & Angreifer trifft automatisch kritisch -- bei EW:Meucheln (mit
-      WM--Grad, wenn Reflexe noch eine Rolle spielen können) wird Opfer get"otet&
-      \begin{minipage}{8cm}
-        \vspace*{1mm}
-        \begin{itemize}
-        \item v"ollige Bewegungsunf"ahigkeit des Opfers
-        \item Opfer bewußtlos
-        \item Opfer schläft (i.\,d.\,R. muß dem Angreifer ein
-          EW:Schleichen (vgl. Anmerkungen zu \emph{Schleichen} oben)
-          gelingen, damit er nah genug an das Opfer herankommt, um
-          diesen Angriff durchzuführen -- erwacht das Opfer durch
-          mißglücktes Schleichen (EW mißglückt, WW gelingt), tritt
-          Stufe 3 ein)
-        \end{itemize}
-        \vspace*{1mm}
-      \end{minipage}\\
+      WM+4 auf Angriff des Gegners &
+      \begin{itemize}
+      \item Opfer im Handgemenge
+      \item Opfer flieht panisch
+      \item Opfer wird von hinten oder aus erhöhter Position
+        angegriffen (WM+2)
+      \item Opfer im Zangenangriff (WM+1)
+      \end{itemize} &
+      \begin{itemize}
+      \item Opfer am Boden liegend
+      \end{itemize} &
+      \begin{itemize}
+      \item Opfer wird im Handgemenge festgehalten (WM+4)
+      \end{itemize}
+      \\
       \hline
-      7 & automatischer Tod &
-      \begin{minipage}{8cm}
-        \vspace*{1mm}
-        \begin{itemize}
-        \item v"ollige Bewegungsunf"ahigkeit des Opfers, Angreifer ist 
-          ungest"ort und hat gen"ugend Zeit (in der Regel au"serhalb
-          von Aktionsphasen)
-        \end{itemize}
-        \vspace*{1mm}
-      \end{minipage}\\
+      WM+4 auf Angriff des Gegners, keine Abwehr &
+      \begin{itemize}
+      \item "`klassische"' Wehrlosigkeit [DFR\,95]
+      \item schwere Beinverletzung (B6)
+      \item Ahnungslosigkeit (\emph{Meucheln} möglich)
+      \item Opfer wird in Schach gehalten [DFR\,95]
+      \end{itemize}&
+      \begin{itemize}
+      \item Opfer hat 0\,AP [DFR\,101]
+      \end{itemize}& 
+      \begin{itemize}
+      \item Opfer hat 1-3\,LP (B4)
+      \item Opfer hat 0\,LP (B0)
+      \end{itemize}\\
       \hline
-    \end{tabular}
-    \caption{Stufen der Handlungsunf"ahigkeit}
+      automatischer kritischer Treffer\footnotemark&
+      ---&
+      ---&
+      \begin{itemize}
+      \item v"ollige Bewegungsunf"ahigkeit des Opfers
+      \item Opfer bewußtlos
+      \item Opfer schläft (vgl. Anmerkungen zu \emph{Schleichen} oben)
+      \end{itemize} \\
+      \hline
+    \end{tabu}
+    \caption{Handlungsunf"ahigkeit und Wehrlosigkeit}
     \label{tab:handlung}
   \end{center}
 }
 \end{table}
 
+\footnotetext{Bei EW:Meucheln (mit
+  WM--Grad, wenn Reflexe noch eine Rolle spielen können) wird
+  Opfer get"otet. Ist der Angreifer ungestört und hat genug Zeit
+  (in der Regel au"serhalb von Aktionsphasen), tötet er das Opfer
+  automatisch.}
 
 \end{document}
 
