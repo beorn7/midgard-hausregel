@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper,germanpar]{article}
-\usepackage{german,anysize,eurosym,tabu,enumitem}
+\usepackage{german,anysize,eurosym,tabu,enumitem,gitinfo2}
 %\usepackage[T1]{fontenc}
 \usepackage{helvet}
 %\usepackage{mathphv}
@@ -21,7 +21,9 @@
 
 \author{Bj"orn~Rabenstein\\ bjoern@rabenste.in}
 \title{Hausregeln f"ur
-  \textsc{Midgard} (4. Auflage)\\Version 2.12}
+  \textsc{Midgard} (4. Auflage)\\Version\gitReln}
+\date{\gitAuthorDate}
+
 
 \begin{document}
 
@@ -38,7 +40,7 @@ aber wenn man nur hinreichend genau hinschaut, ist man immer beliebig
 weit von der Realit"at (was auch immer das sein mag) entfernt. Ein
 Rollenspiel hat seine eigene Realit"at. Die Regeln dienen dazu, dem
 daran interessierten Spieler ein Gef"uhl zu geben, welchen Gesetzen
-diese spezielle Realit"at folgt. Sie dient auch dem Spielleiter,
+diese spezielle Realit"at folgt. Sie dient auch dem SpL,
 einsch"atzen zu k"onnen, was die Spieler f"ur eine Erwartung von
 dieser Realit"at haben, um also zu vermeiden, da"s bei den Spielern
 der Eindruck von Willk"ur oder Ungerechtigkeit entsteht. Schlußendlich
@@ -46,7 +48,7 @@ sorgen die Regeln dafür, daß die Spielwelt sich (in gewissen Grenzen)
 "`selber spielt"' -- das Rollenspiel erhält in Teilen den Charakter
 einer Simulation, vergleichbar einem simulationsbetonten Brett- oder
 Computerspiel. Von all dem unbeschadet bleibt die "`goldene"' Regel,
-da"s der Spielleiter immer recht hat und erhaben "uber jede Regel ist
+da"s der SpL immer recht hat und erhaben "uber jede Regel ist
 (was selbstverständlich nur behutsam Anwendung finden sollte, da
 andernfalls der Zweck der Regeln \emph{ad absurdum} geführt würde). Die
 hier folgenden Klarstellungen und "Anderungen sollen in diesem Sinne
@@ -82,16 +84,19 @@ Seit Version~2.0 beziehen sich diese Hausregeln auf die 4.~Auflage des
 nicht Fuß gefaßt.) Verweise auf das Regelwerk werden in der Form
 [XXX\,nnn] gegeben, wobei XXX ein Kürzel für das jeweilige Buch ist,
 während nnn die Seitenzahl angibt. Folgende Kürzel finden Verwendung:
-DFR = Das Fantasy-Rollenspiel, ARK = Das Arkanum, KOM = Das
-Kompendium, BES = Das Bestiarium, MDS = Meister der Sphären. Der
-Begriff \emph{Figur} (als "`altdeutsche"' Version von englisch
-\emph{Character} oder eingedeutscht \emph{Charakter}) ist in den
-jüngeren \textsc{Midgard}-Auflagen irgendwie der Vergessenheit anheim
-gefallen, erfreut sich hier aber noch reger Benutzung. Also: SpF =
-Spielerfigur = \emph{player character} = PC = "`Abenteurer"' =
-"`Held"'. NSpF = Nichtspielerfigur = \emph{non-player character} =
-NPC. Die Schreibweise \textsc{Midgard} bezieht sich auf das
-Regelsystem, während die Spielwelt \emph{Midgard} als Midgard
+DFR = \emph{Das Fantasy-Rollenspiel}, ARK = \emph{Das Arkanum}, KOM =
+\emph{Das Kompendium}, BES = \emph{Das Bestiarium}, MDS =
+\emph{Meister der Sphären}, KTP = \emph{Unter dem Schirm des
+  Jadekaisers} (KanThaiPan-Quellenbuch). Der Begriff \emph{Figur} (als
+"`altdeutsche"' Version von englisch \emph{Character} oder
+eingedeutscht \emph{Charakter}) ist in den jüngeren
+\textsc{Midgard}-Auflagen irgendwie der Vergessenheit anheim gefallen,
+erfreut sich hier aber noch reger Benutzung. Also: SpF = Spielerfigur
+= \emph{player character} = PC = "`Abenteurer"' = "`Held"'. NSpF =
+Nichtspielerfigur = \emph{non-player character} = NPC. Desweiteren
+werden die üblichen \textsc{Midgard}-Abkürzungen benutzt
+(vgl. [MDS\,296]). Die Schreibweise \textsc{Midgard} bezieht sich auf
+das Regelsystem, während die Spielwelt \emph{Midgard} als Midgard
 bezeichnet wird.
 
 
@@ -113,19 +118,27 @@ der Regeln betrachtet und hier bereits vorausgesetzt.
 \item In [DFR\,120] linke Spalte, vorletzter Absatz steht geschrieben, daß ein
   Kurzsichtiger keine Probleme beim Fernkampf hat (mit Ausnahme von
   Scharfschießen).  In [DFR\,116] linke Spalte, vorletzter Absatz steht
-  hingegen, daß der Spielleiter vor jedem Schuß auf Ziele außerhalb des
+  hingegen, daß der SpL vor jedem Schuß auf Ziele außerhalb des
   Nahbereichs einen EW:Sehen verlangen kann. Es gilt letztere Regel, wobei
   ausdrücklich auf das \emph{kann} verwiesen wird.  Der EW ist also kein
-  Automatismus, sondern dem Spielleiter überlassen.
+  Automatismus, sondern dem SpL überlassen.
 \end{itemize}
 
 \section{Fertigkeiten}
 
 \begin{itemize}
+\item Wird eine \textbf{angeborene Fertigkeit} [DFR\,38f] erwürfelt,
+  die die SpF aufgrund ihrer Basiseigenschaften nicht haben kann, wird
+  der Wurf wiederholt. Das gleiche gilt für Fertigkeiten, über die die
+  SpF bereits verfügt oder die im Widerspruch zu solchen Fertigkeiten
+  stehen (z.\,B. steht \emph{Riechen+10} mit \emph{Riechen+4} im
+  Widerspruch (u.\,u.) oder \emph{Kurzsichtigkeit} mit
+  \emph{Nachtsich}). Im unwahrscheinlichen Fall, daß keine weitere
+  angeborene Fertigkeit mehr möglich ist, entfällt der Wurf.
 \item Der \textbf{automatische} EW f"ur Entdeckungs- und Wissensfertigkeiten
   und für Sinne [DFR\,114] mu"s nicht grunds"atzlich \textbf{kritisch
     erfolgreich} sein. Bei einfach zu entdeckenden Informationen kann nach
-  Spielleiterentscheidung auch ein \textbf{normaler Erfolg} reichen, und ein
+  SpL-Entscheidung auch ein \textbf{normaler Erfolg} reichen, und ein
   automatischer EW kann auch gewährt werden, wenn die entsprechende Fertigkeit
   ungelernt bzw. der Sinn nicht überdurchschnittlich gut entwickelt ist. Ein
   derartiges Vorgehen wird auch in den Regeln an vielen Stellen mehr oder
@@ -148,7 +161,7 @@ der Regeln betrachtet und hier bereits vorausgesetzt.
   gegeben, die die Abgrenzung der Fertigkeiten im Sinne des Regelwerks
   erleichtern und behutsam ergänzen sollen:
   \begin{itemize}
-  \item Generell sollte sich der Spielleiter eher großzügig zeigen, was die
+  \item Generell sollte sich der SpL eher großzügig zeigen, was die
     Anwendungsgebiete der Fertigkeiten angeht, insbesondere wenn die Spieler
     fanatasievoll darlegen können, wie ihre Figuren eine bestimmten Fertigkeit
     in einer gegebenen Situation geeignet anwenden können. Andererseits sollte
@@ -234,17 +247,17 @@ der Regeln betrachtet und hier bereits vorausgesetzt.
   betrachten die Hausregeln die Lernkosten eben nicht nur als direkte
   Bezahlung des Lehrmeisters, sondern auch als Kosten für den
   Lebensunterhalt.)
-\item \textbf{\emph{Meucheln: }}Nach [DFR\,160ff] mu"s mindestens 1\,LP
-  schwerer Schaden angerichtet werden, damit das Opfer stirbt. Je nach
-  Methode des Meuchelns und Art der R"ustung wird der R"ustungsschutz
-  jedoch nicht ber"ucksichtigt. (Einen Dolch durch eine
-  Plattenr"ustung ins Herz zu sto"sen, ist fast unm"oglich. Beim
+\item \textbf{\emph{Meucheln: }}Nach [DFR\,160ff] mu"s mindestens
+  1\,LP schwerer Schaden angerichtet werden, damit das Opfer
+  stirbt. Je nach Methode des Meuchelns und Art der R"ustung wird der
+  R"ustungsschutz jedoch nicht ber"ucksichtigt. (Einen Dolch durch
+  eine Plattenr"ustung ins Herz zu sto"sen ist fast unm"oglich. Beim
   Erw"urgen mit einer Schnur nutzt die Plattenr"ustung hingegen
   "uberhaupt nichts. Eine Textilr"ustung oder Lederr"ustung bietet
   vielleicht eine passende L"ucke f"ur einen Sto"s ins Herz.) Die
   negative WM--Grad, die auf den EW:Meucheln angerechnet wird, steht
   f"ur die besseren Reflexe, die Intuition und den sechsten Sinn, die
-  erfahrene Figuren  sich angeeignet haben. Bei Kreaturen, die aufgrund
+  erfahrene Figuren sich angeeignet haben. Bei Kreaturen, die aufgrund
   ihrer angeborenen Gef"ahrlichkeit und nicht aufgrund von Erfahrung
   einen hohen Grad besitzen, wird diese WM abgeschw"acht oder gar
   aufgehoben.
@@ -274,6 +287,16 @@ der Regeln betrachtet und hier bereits vorausgesetzt.
 
 \subsection{Vergabe von Erfahrungspunkten}
 
+\subsubsection{AEP}
+\label{aep}
+
+Auch bei der Vergabe von AEP für die kampflose Überwindung eines
+Gegners [DFR\,270f] findet der für die KEP-Vergabe gültige
+Multiplikator Anwendung. (Faustregel: Die Anzahl an AEP für die
+Überwindung eines Gegners entspricht der Anzahl an KEP, die es gegeben
+hätte, wenn dem Gegner alle AP durch Fernkampfangriffe geraubt worden
+wären.)
+
 \subsubsection{KEP}
 
 In der Regel verliert ein Gegner AP entsprechend des erw"urfelten
@@ -298,18 +321,14 @@ Gegner zu keiner Gegenwehr f"ahig ist, insbesondere
 \textbf{Fernkampfangriffe aus dem Hinterhalt} (also auch beim
 Scharfschie"sen) oder Angriffe beim \textbf{Meucheln}
 [DFR\,268]. Hierf"ur gibt es unter Umst"anden \textbf{AEP} f"ur die
-"Uberwindung eines Gegners [DFR\,270f], wobei der Multiplikator für
-KEP-Vergabe auch bei den so vergebenen AEP Berücksichtigung finden
-kann (Faustregel: Die Anzahl an AEP für die Überwindung eines Gegners
-entspricht der Anzahl an KEP, die es gegeben hätte, wenn dem Gegner
-alle AP durch Fernkampfangriffe geraubt worden wären.)
+"Uberwindung eines Gegners (siehe Abschnitt \ref{aep}).
 
 \subsubsection{ZEP} 
 
 Gelingt sowohl der EW:Zaubern wie auch der WW:Resistenz, erh"alt der Zauberer
 in der Regel dennoch ZEP, sofern der Zauber nicht ausschließlich darauf
 gezielt hat, dem Opfer AP zu rauben bzw. es kampfunfähig zu machen [DFR\,269].
-Allerdings sollte der Spielleiter bei Serien von vergeblichen Bannversuchen
+Allerdings sollte der SpL bei Serien von vergeblichen Bannversuchen
 o.\,ä. nur einen Versuch mit ZEP belohnen. (Wenn aber dann das Zauberduell
 gegen einen überlegenen Zauberer schließlich doch gelingt, darf es ruhig ein
 paar Bonus-ZEP geben.)
@@ -323,15 +342,15 @@ Zauber gez"ahlt.  F"ur effiziente Anwendung der beschworenen Wesen
 kann der Beschw"orer jedoch AEP erhalten. ZEP f"ur \textbf{sonstige
   Zauber}, bei denen der Zauberer \textbf{alle} seine AP opfern mu"s,
 werden grunds"atzlich nicht nach der Anzahl der verbrauchten AP
-berechnet, sondern vom Spielleiter je nach Bedeutung des
+berechnet, sondern vom SpL je nach Bedeutung des
 durchgef"uhrten Zaubers frei bestimmt.
 
 \subsection{Praxispunkte}
 
 Bei PP, die nach den Standardregeln durch einen \textbf{doppelten EW}
-vergeben werden, ersetzt eine Spielleiterentscheidung den zweiten
+vergeben werden, ersetzt eine SpL-Entscheidung den zweiten
 EW. Es wird also nicht mehr "`hinterhergewürfelt"' für den PP. Der
-Spielleiter entscheidet, ob die Situation die Vergabe eines PP
+SpL entscheidet, ob die Situation die Vergabe eines PP
 rechtfertigt. Je nach Situation kann er dabei sogar nach einen
 mißlungenen EW einen PP vergeben ("`auch aus Fehlern kann man lernen"'
 oder auch im Sinne der Variante für Wissensfertigkeiten
@@ -339,7 +358,7 @@ oder auch im Sinne der Variante für Wissensfertigkeiten
 der Standardregeln für die PP-Vergabe ergeben hätten, können dabei
 durchaus eine Richtlinie sein (einem Experten bringt eine einfach
 Routineaufgabe kaum noch Praxiserfahrung), aber die letztendliche
-Kontrolle bleibt beim Spielleiter.
+Kontrolle bleibt beim SpL.
 
 \emph{Anmerkung: Diese Regeländerung dient zwei Zwecken: Zum einen
   wird die Anzahl an nötigen Würfelwürfen reduziert, was den
@@ -352,7 +371,7 @@ Kontrolle bleibt beim Spielleiter.
   sorgen. Mit der 4.~Auflage der \textsc{Midgard}-Regeln wurde das
   PP-System neu geregelt. Dabei wurde allerdings das Gleichgewicht
   zu Ungunsten der allgemeinen Fertigkeiten verschoben. Mit dieser
-  Hausregel hat es der Spielleiter in der Hand, für Ausgleich zu sorgen.}
+  Hausregel hat es der SpL in der Hand, für Ausgleich zu sorgen.}
 
 \subsection{Lernen}
 
@@ -386,8 +405,7 @@ Gegenst"anden ist ein Weg, ein eventuell au"ser Kontrolle geratenes
 Arsenal der SpF an magischen Gegenst"anden wieder auszud"unnen und den
 SpF dabei gleichzeitig ad"aquate Gegenleistung zu bieten.
 
-\begin{tabular}{|p{16.5cm}|}
-  \hline
+\fbox{\parbox{0.98\textwidth}{%
   \textbf{Beispiel:} \emph{\small Der Priester Fares lebt in klosterartiger
     Tempelgemeinschaft. Die Mitglieder der Gemeinschaft haben kein
     wesentliches Privateigentum. Nat"urlich verlangt die
@@ -410,12 +428,10 @@ SpF dabei gleichzeitig ad"aquate Gegenleistung zu bieten.
     flexible Regelungen beim Lernen ohne Probleme m"oglich. Spieler,
     die solche gutm"utigen Regelungen massiv zum eigenen
     spieltechnischen Vorteil auszunutzen, m"ussen sich fragen lassen,
-    ob sie geeignet sind, einen Priester zu spielen.}\\
-  \hline
-\end{tabular}
+    ob sie geeignet sind, einen Priester zu spielen.}
+}}
 
-\begin{tabular}{|p{16.5cm}|}
-  \hline
+\fbox{\parbox{0.98\textwidth}{%
   \textbf{Beispiel:} \emph{\small Oxymanos, der
     Magier, m"ochte einen m"achtigen Zauber lernen, den ihm niemand aus
     seiner Gilde in Chryseia beibringen kann. Nach einigen Recherchen findet er
@@ -430,10 +446,8 @@ SpF dabei gleichzeitig ad"aquate Gegenleistung zu bieten.
     auf, ihn zu finden. Nach einem l"angeren Abenteuer gelingt es
     ihnen, den Magier aus der Gefangenschaft eines Tegarenstammes zu
     befreien. Dankbar erkl"art er sich bereit, Oxymanos kostenlos den
-    begehrten Zauberspruch zu lehren.
-}\\
-  \hline
-\end{tabular}
+    begehrten Zauberspruch zu lehren.}
+}}
 
 \subsubsection{Unterbrechungen des Lernens}
 
@@ -441,7 +455,7 @@ Im Gegensatz zu den Standardregeln sind Unterbrechungen des
 Lernvorgangs grundsätzlich schadlos möglich. Auch kann ein Lernvorgang
 beliebig modularisiert werden in Teile, die durch Unterweisung, durch
 Selbststudium oder durch Praxis gelernt werden. Diese Regelung sollte
-natürlich nicht exzessiv ausgenutzt werden und kann vom Spielleiter
+natürlich nicht exzessiv ausgenutzt werden und kann vom SpL
 ausgesetzt werden, wo dies sinnvoll erscheint.  Aber gerade bei sehr
 umfangreichen Lernvorgängen (z.\,B. die sehr aufwendige Steigerung
 eines bereits hohen Erfolgswertes für eine Waffe) erscheint es
@@ -701,7 +715,7 @@ Wird Schicksalsgunst benutzt, um die EW für einen gezielten Schuß zu
 wiederholen, werden immer \emph{beide} EW (nach Einsetzem eines
 Punktes SG) wiederholt.
 
-\section{Kampf}
+\section{Aktionsphasen}
 
 \subsection{Bewegung}
 
@@ -730,7 +744,7 @@ abgehandelt werden, gelten folgende Anmerkungen:
 Die Entscheidung, welche Handlungen die Figuren in einer Runde
 ausführen, wird (zumindestens im Prinzip) \textbf{gleichzeitig} nach
 Abschluß der Bewegungen getroffen. (In der Praxis ist es am
-einfachsten, wenn der Spielleiter zunächst heimlich die Handlungen für
+einfachsten, wenn der SpL zunächst heimlich die Handlungen für
 die NSpF festlegt, woraufhin dann die Spieler für ihre Figuren
 entscheiden. Sollte es in seltenen Fällen für einen "`realistischen"'
 Spielablauf nötig sein, kann man die Aktionen auch geheim auf Zetteln
@@ -758,6 +772,18 @@ oder Auswahl und Ziel eines Zaubers).
 % Letzteres folgt einer JEF-Äußerung, daß beim Fechten das Ziel des
 % zweiten Angriffs spontan gewechselt werden kann, z.B. wenn das
 % ursprüngliche Ziel bereits kampfunfähig ist.
+Hat eine Figur sich aber z.\,B. auf einen Angriff festgelegt, wird
+dann aber \textbf{zu Fall gebracht} (vgl. [DFR\,88]),
+\textbf{entwaffnet} oder im Handgemenge \textbf{festgehalten}, bevor
+sie mit ihrer Handlung an der Reihe ist, dann entfällt ihr Angriff und
+damit ihre Handlung ganz. Sie kann sich nicht spontan entscheiden,
+statt des Angriffs \textbf{aufzustehen}, die \textbf{Waffe aufzuheben}
+bzw. sich \textbf{loszureißen}. Diese Handlungen können erst in der
+nächsten Runde gewählt werden. Eine Figur kann auch nicht
+"`präventiv"' eine Handlung wählen, für die die Voraussetzungen nach
+Abschluß der Bewegungen noch gar nicht vorliegen (z.\,B. eine Waffe
+aufzuheben für den Fall, daß sie zu Boden fallen sollte, bevor die
+Figur mit ihrer Handlung an die Reihe kommt).
 
 Wird durch eine Handlung ein Effekt ausgelöst, der eine bestimmte
 Zeitdauer anhält, so wird diese in der Regel erst vom Beginn der
@@ -772,14 +798,121 @@ schwere Rüstungen). Bei \textbf{sekundengenau} simulierten
 Handlungsabläufen gelten diese Anmerkungen nicht mehr. Die Gw spielt
 dann aber durch die jetzt erfolgenden PW eine wichtige Rolle. Generell
 gilt aber ohnehin, das sekundengenau simulierte Handlungsabläufe die
-Ausnahme darstellen. Dem Spielleiter sollte klar sein, daß sie ihm
+Ausnahme darstellen. Dem SpL sollte klar sein, daß sie ihm
 üblicherweise sehr viel Regelimprovisation abfordern werden. Häufig
 läßt sich mit ähnlich viel Regelimprovisation (aber weniger Aufwand)
 eine Situation auch rundenweise befriedigend abhandeln.
 
+\section{Kampf}
+
+\subsection{Nahkampf}
+
+Gemäß [DFR\,223f] ist die Anzahl an Gegnern, die eine Figur
+gleichzeitig im Nahkampf angreifen können, durch die Anzahl freier
+Kanten des Feldes (oder der Felder), das (bzw. die) sie einnimmt,
+bestimmt. Welche Gegner dürfen nun aber angreifen, wenn mehr als die
+Maximalzahl um die Figur herumstehen? Nur nach Angriffsrang zu gehen,
+könnte zu der Situation führen, daß zahlreiche schnelle Angriffe auf
+das eine Ende einer Riesenschlange die späteren Angriffe auf das
+andere Ende unterbinden. Für diesen Fall hier also verfeinerte Regeln:
+
+Ein Feld verfügt über acht sogenannte \textbf{Angriffswege}, nämlich
+je einen über jede Ecke und je einen über jede Kante. Der Angriffsweg
+über eine Kante ist benachbart zu den beiden Angriffswegen über die
+benachbarten Ecken, und der Angriffsweg über eine Ecke ist benachbart
+zu den beiden Angriffswegen über die benachbarten Kanten. (Für größere
+Figuren gilt entsprechendes für die außen liegenden Kanten und Ecken
+der eingenommenen Felder.) Verfügen die Felder zweier Figuren über
+eine gemeinsame Kante, dann erfolgen Angriffe über diese Kante oder
+eine der beiden benachbarten Ecken. Sind die beiden Figuren diagonal
+benachbart, erfolgt der Angriff über die gemeinsame Ecke oder eine der
+beiden benachbarten Kanten des Feldes des Angriffszieles. Bei weiteren
+Angriffen gilt, daß der gewählte Angriffsweg nicht unmittelbar
+benachbart zu einem bereits genutzten Angriffsweg sein
+darf. \textbf{Lange Spießwaffen} können jeden Angriffsweg wählen, der
+noch nicht benutzt wird. Weder behindern sie benachbarten
+Angriffswege, noch werden sie von benutzten benachbarten Angriffswegen
+behindert. \textbf{Zweihändige Hiebwaffen} beanspruchen immer den
+zentralen und beide benachbarten Angriffswege.
+
+\subsection{Fernkampf}
+
+Schußwaffen können, wenn nicht ausdrücklich etwas anderes angegeben
+wird, jede Runde abgefeuert werden. Die Geschosse müssen dabei in einem
+geeigneten Behälter am Körper bereitgehalten werden, so daß schnell
+genug "`nachgeladen"' werden kann.
+
+Bei Wurfwaffen ist die Situation weniger klar, weil ja die gesamte
+Waffe weggeworfen wird. Prinzipiell erfordert das Ziehen einer neuen
+Wurfwaffe eine ganz Runde, bevor diese wieder zum Einsatz gebracht
+werden kann. Je nach Waffenart können aber Waffen günstig genug
+bereitgehalten werden, so daß sie jede Runde geworfen werden
+können. Bei Wurfstern und Wurfscheibe geht aus der Beschreibung
+[DFR\,210] hervor, daß sogar mehrere dieser Waffen innerhalb einer
+Kampfrunde geworfen werden können. Beim Wurfspeer erwähnt die
+Beschreibung, daß drei Speere in der Hand bereitgehalten werden
+können. Beim schwereren Wurfspieß ist dies offenbar nicht
+möglich. Andere kleinere Wurfwaffen (Wurfmesser, Wurfpfeile, \dots)
+können je nach Situation (SpL-Entscheidung) bereitgelegt oder
+in der freien Hand bereitgehalten werden.
+
+\subsection{Handgemenge}
+
+Man beachte, daß eine im Handgemenge \textbf{Festgehaltener} zwar
+"`weitgehend handlungsunfähig"' ist [DFR\,239], dies aber nichts über
+ihre Fähigkeit zur \emph{Abwehr} aussagt (was ja formal keine Handlung
+ist, vgl. Anhang \ref{behindert}). Das Beispiel in [DFR\,240] legt
+aber nahe, daß es für Dritte möglich ist, den Festgehaltenen zu
+fesseln. Eine echte Verknotung würde mindestens 1min dauern (oder
+sogar 10min mit \emph{HoJoJutsu} [KTP\,161]). Hier geht es aber wohl
+nur darum, das Opfer so mit Seilen zu umwickeln, daß das weitere
+Festhalten dann automatisch gelingt und die Seile in Ruhe verknotet
+werden können. Um dies zu simulieren, darf einmal pro Runde jeder, der
+nicht selbst mit dem Festhalten beschäftigt ist, als Handlung
+versuchen, den Festgehaltenen wirkungsvoll mit einem Seil zu
+umwickeln. Dazu muß ihm ein \textbf{EW:Seilkunst} gelingen, bei dem
+kritische Fehler und Erfolge keine besonderen Auswirkungen
+haben. Gelingt dem Festgehaltenen das Lossreißen, scheitern alle
+Umwicklungsversuche dieser Runde automatisch.
+
+Der \textbf{Rüstungsbonus} findet auch im Handgemenge Anwendung (im
+Gegensatz zum Waffenrang).
+
+\subsection{Rüstung und Verteidigung}
+
+Im Sinne von [DFR\,94] gelten Angriffe als \textbf{von vorne}, wenn
+sie von den drei direkt vor einer Figur gelegenen Feldern ausgeführt
+werden. \textbf{Von der Seite} erfolgen Angriffe, die weden von vorne
+noch von hinten erfolgen.
+
+Figuren, die mit LR oder schwerer gerüstet sind, erleiden
+spieltechnisch kaum weitere Nachteile, wenn sie auch Lederarm- und
+-beinschienen und einen ledernen Halsschutz tragen [DFR\,245]. Auch
+NSpF, die auf einen Kampf eingestellt sind, werden nach Maßgabe des
+SpL diese Rüstungsteile tragen, selbst wenn dies nicht ausdrücklich in
+den Spieldaten verzeichnet ist.
+
+Für Belange des \textbf{Kampfes ohne Waffen} gilt das Tragen eines
+Helmes, eines Halschutzes oder von Arm- oder Beinschienen aus Leder
+(auch einzeln) wie das Tragen einer LR. Das Tragen eines
+entsprechenden Rüstungsteils aus Metall gilt wie das Tragen von PR
+(wobei der Gegner eines Faustkämpfers weiterhein eine vollwertige PR
+oder besser benötigt, um gegen den Faustkampf immun zu sein).
+
+Die Schwachstellen der kanthanischen Rüstungen [KTP\,254] lassen
+sich in der Tat nun durch \textbf{gezielte Hiebe}, nicht aber durch
+normale \textbf{kritische Treffer} ausnutzen. Bei gezielten Hieben auf
+die Gliedmaßen schützen die kanthanischen Rüstungen grundsätzlich nur
+wie \textbf{TR} (so die jeweilige Rüstung überhaupt den betroffenen
+Körperteil abdeckt). Der gezielte Hieb auf die Schwachstelle am Rumpf
+erfolgt mit \textbf{WM+4} auf den 2. WW:\emph{Abwehr}, hat aber keinen
+kritischen Schaden zur Folge, sondern lediglich den Effekt, daß die RK
+nur TR ist. Ein \textbf{kritischer Erfolg} hat allerdings den Effekt
+von \textbf{21--35} auf \textbf{Tabelle 4.5}. (Die Schwachstelle der
+Rüstung erlaubt kein Zielen auf lebenswichtige Organe. In der Regel
+ist es effektiver, die Schwachstellen an den Gliedmaßen auszunutzen.)
+
 % Folgender Absatz gestrichen wegen eindeutiger Aussage JEFs.
-%
-% \subsection{Rüstungschutz}
 % 
 % Die Beschränkung des Rüstungsschutzes gegen Armbrüste, Langbögen und
 % Kompositbögen [DFR\,97] gilt nur bei Metallplatten (die durch derartige
@@ -801,28 +934,6 @@ Fernkampfangriffes u.\,a. das Ausweichen bzw. Ablenken mit dem Schild
 dar, wobei fraglich ist, wie es dabei zu einer Benetzung des
 Abwehrenden mit Zauberöl kommen kann. [DFR\,253f]
 
-\subsection{Fernkampf}
-
-Schußwaffen können, wenn nicht ausdrücklich etwas anderes angegeben
-wird, jede Runde abgefeuert werden. Die Geschosse müssen dabei in einem
-geeigneten Behälter am Körper bereitgehalten werden, so daß schnell
-genug "`nachgeladen"' werden kann.
-
-Bei Wurfwaffen ist die Situation weniger klar, weil ja die gesamte
-Waffe weggeworfen wird. Prinzipiell erfordert das Ziehen einer neuen
-Wurfwaffe eine ganz Runde, bevor diese wieder zum Einsatz gebracht
-werden kann. Je nach Waffenart können aber Waffen günstig genug
-bereitgehalten werden, so daß sie jede Runde geworfen werden
-können. Bei Wurfstern und Wurfscheibe geht aus der Beschreibung
-[DFR\,210] hervor, daß sogar mehrere dieser Waffen innerhalb einer
-Kampfrunde geworfen werden können. Beim Wurfspeer erwähnt die
-Beschreibung, daß drei Speere in der Hand bereitgehalten werden
-können. Beim schwereren Wurfspieß ist dies offenbar nicht
-möglich. Andere kleinere Wurfwaffen (Wurfmesser, Wurfpfeile, \dots)
-können je nach Situation (Spielleiterentscheidung) bereitgelegt oder
-in der freien Hand bereitgehalten werden.
-
-
 \subsection{Auswirkungen und Heilung von erlittenem Schaden}
 
 Die Nachteile, die eine Figur erleidet, wenn sie mindestens die Hälfte
@@ -831,7 +942,7 @@ gelten grundsätzlich nur für \textbf{Lebewesen}. Insbesondere Untote
 leiden nicht unter diesen Nachteilen und würfeln auch nicht auf
 Tabelle~2.5. (Siehe [MDS\,85] und eine offizielle Klarstellung im
 Midgard-Forum.) Für andere unbelebte oder magisch belebte Figuren gilt
-nach Maßgabe des Spielleiters Entsprechendes. Auch die Interpretation
+nach Maßgabe des SpL Entsprechendes. Auch die Interpretation
 der Auswirkungen kritischen Schadens bei Figuren, die keine normalen
 Lebewesen sind, muß entsprechend angepaßt werden. (Beispielsweise wird
 eine Skelett durch eine Augen- oder Wirbelsäulenverletzung in keinster
@@ -860,7 +971,7 @@ der bei Schlafbeginn fehlenden AP zur"uck).
 
 Es kann passieren, da"s eine Figur v"ollig \textbf{ausgeschlafen} ist,
 aber dennoch viele AP verloren hat. In einem solchen Fall kann der
-Spielleiter gestatten, da"s auch durch echtes \textbf{Ausruhen} in
+SpL gestatten, da"s auch durch echtes \textbf{Ausruhen} in
 tiefer Entspannung und völliger Ruhe AP in reduzierter Geschwindigkeit
 regeneriert werden (und zwar mehr als die 2\,AP, die in [DFR\,103]
 zugestanden werden).
@@ -976,8 +1087,7 @@ deren Organismus in keinster Weise mehr als menschenähnlich bezeichnet
 werden kann (Drachen, Schleimmonster, \dots) oder die noch nicht eimal
 mehr Lebewesen sind (Untote, Automaten, Geister, \dots). Im [BES]
 finden sich nur gelegentlich Ausführungen, die hier hilfreich sind
-(z.\,B. über Drachen [BES\,58ff]). Meist muß der Spielleiter
-improvisieren.
+(z.\,B. über Drachen [BES\,58ff]). Meist muß der SpL improvisieren.
 
 Ein gezielter Hieb kann auch benutzt werden, um einen Gegner gezielt
 im offenen Kampf zu \textbf{bet"auben}, ohne ihm ernsthaften Schaden
@@ -995,9 +1105,19 @@ Bet"aubens ist wie Meucheln nur gegen hinreichend menschen"ahnliche
 Gegner m"oglich. (Davon unbeschadet bleibt die M"oglichkeit des
 \emph{Faustkampfes} [DFR\,197f].)
 
+Gezielte Hiebe mit \textbf{kanthanischen Schwertern} haben nicht die
+dramatischen Auswirkungen, die in [KTP\,248] beschrieben sind. Selbst
+mit den Standardregeln reicht ein erfolgreicher gezielter Angriff auf
+ein Bein oder den Waffenarm i.\,d.\,R. aus, um den Kampf zu beenden,
+so daß hier kein spieltechnischer Bedarf besteht, die Regeln
+gefährlicher zu gestalten. Die Lebensgefahr durch Verbluten wird von
+den Standardregeln noch nicht einmal simuliert, wenn ein Körperteil
+komplett \textbf{abgetrennt} wird. Es wäre daher unverhältnismäßig,
+einer Schnittwunde ein größeres Gefährdungspotential zu geben.
+
 \subsubsection{Fernkampf}
 
-Die Fertigkeit \emph{Werfen} [DFR\,208] kann \emph{nicht für gezielte
+Die Fertigkeit \emph{Werfen} [DFR\,208] kann \textbf{nicht für gezielte
   Würfe} benutzt werden.
 
 Da gezielte Schüsse und Würfe immer auf wehrlose Figuren erfolgen
@@ -1033,6 +1153,22 @@ nötig.
 
 \subsection{Spezielle Kampftechniken}
 
+\subsubsection{Sturmangriff}
+\label{sturm}
+
+Klarstellend zu [DFR\,230] ist ein Angriff genau dann ein
+Sturmangriff, wenn beide folgende Punkte gegeben sind:
+\begin{itemize}
+\item Es handelt sich um einen Angriff, der im Zuge der Aktionen 2d,
+  2f, 2g oder 2h [DFR\,220] durchgeführt wird, aber \textbf{nicht} um
+  einen Zusatzangriff (genau definiert durch Punkt \ref{i:zusatz} in
+  Abschnitt \ref{kombi}).
+\item Der Angreifer hat sich um mindestens 6m und höchstens die Hälfte
+  seiner Bewegungsweite bewegt \textbf{oder} der Angriff erfolgt gegen
+  eine Figur, die ihrerseits einen Sturmangriff gegen den Angreifer
+  durchführt.
+\end{itemize}
+
 \subsubsection{Konzentrierte Abwehr}
 
 Ein \emph{Wehrloser} kann niemals konzentriert abwehren (auch nicht
@@ -1049,13 +1185,6 @@ das ausdrücklich in [DFR\,140] geregelt.)
 Um einen Gegner \textbf{zurückzudrängen} [DFR\,228] muß der eigene
 gelungene Nahkampfangriff dem Gegner mindestens 1\,AP geraubt haben.
 
-\subsubsection{Handgemenge}
-
-Man beachte, daß eine im Handgemenge \textbf{Festgehaltener} zwar
-"`weitgehend handlungsunfähig"' ist [DFR\,239], dies aber nichts über
-ihre Fähigkeit zur \emph{Abwehr} aussagt (was ja formal keine
-Handlung ist, vgl. Anhang \ref{behindert}).
-
 \subsubsection{Peitsche}
 
 Der durch den Peitschenhieb ausgelöste Schock [DFR\,204] löst Stufe 2a
@@ -1067,29 +1196,44 @@ simulierten Handlungsabläufen zur Geltung. Im Normallfall dauert sie,
 wie in Abschnitt~\ref{timing} beschrieben, bis zum Ende der folgenden
 Runde.
 
-\subsubsection{Kampf ohne Waffen}
+\subsubsection{Kampfgabeln}
 
-Der Zuschlag zum WW:Abwehr beim \emph{waffenlosen Kampf} wird nur in
-Runden angerechnet, in denen der Kämpfer diese Waffenfertigkeit auch
-wirklich anwendet. Letzteres muß sich nicht unbedingt durch einen
-tatsächlichen EW:Angriff mit \emph{waffenlosen Kampf} definieren und
-kann vom Spielleiter durchaus flexibel gehandhabt werden. Der Zuschlag
-kommt aber insbesondere dann nicht zur Geltung, wenn der Kämpfer noch
-eine Waffe in der Hand hält, sich in der laufenden Runde um mehr als
-die Hälfte seiner Bewegungsweite bewegt hat, \emph{Faustkampf}
-betreibt oder sich einer gänzlich anderen Tätigkeit widmet.
+\textbf{Waffenrang} und \textbf{Rüstungsbonus} von Kampfgabeln sind
+die gleichen wie bei einem \textbf{Dolch}.
+
+Die in [KTP\,246] erwähnte Eigenschaft des \textbf{Sai}, einzeln auch
+als \textbf{Parierdolch} eingesetzt werden zu können, ist nicht
+spezifisch für das Sai, sondern gilt für alle Formen der Kampfgabel,
+selbst dann, wenn in der anderen Hand eine andere Waffe als eine
+Kampfgabel geführt wird (vgl. [DFR\,214]). Allerdings wird immer der
+Erfolgswert für \textbf{Kampfgabeln} zugrundegelegt, nicht der für
+\emph{Parierdolch}.
+
+\subsubsection{Waffenloser Kampf}
+\label{wlk}
+
+Der Zuschlag zum WW:Abwehr gegen Nahkampfangriffe beim
+\emph{waffenlosen Kampf} wird nur in Runden angerechnet, in denen der
+Kämpfer diese Waffenfertigkeit auch wirklich anwendet. Letzteres muß
+sich nicht unbedingt durch einen tatsächlichen EW:Angriff mit
+\emph{waffenlosem Kampf} definieren und kann vom SpL durchaus flexibel
+gehandhabt werden. Der Zuschlag kommt aber insbesondere dann nicht zur
+Geltung, wenn der Kämpfer noch eine Waffe in der Hand hält
+(ausgenommen Kampfriemen, Tonfa und YoTenTori), sich in der laufenden
+Runde um mehr als die Hälfte seiner Bewegungsweite bewegt hat,
+\emph{Faustkampf} betreibt oder sich einer gänzlich anderen Tätigkeit
+widmet.
 
 Entsprechendes gilt für den zusätzlichen WW gegen das Einleiten eines
 Handgemenges. Dieser kann außer durch \emph{waffenlosen Kampf} auch
 durch \emph{Faustkampf} herbeigeführt werden. Allerdings muß der
 Kämpfer sich für eine der beiden Möglichkeiten entscheiden.
 
-Das Tragen eines Helmes oder von Arm- oder Beinschienen aus Leder
-(auch einzeln) gilt für Belange des Kampfes ohne Waffen wie das Tragen
-einer LR. Das Tragen eines entsprechenden Rüstungsteils aus Metall gilt
-wie das Tragen von PR (wobei der Gegner eines Faustkämpfers weiterhein
-eine vollwertige PR oder besser benötigt, um gegen den Faustkampf
-immun zu sein).
+\subsubsection{Faustkampf}
+
+Siehe Anmerkungen in Abschnitt \ref{wlk} zu den Bedingungen, unter
+denen ein zusätzlicher WW:\emph{Faustkampf} gegen das Einleiten eines
+Handgemenges gewährt wird.
 
 Der zweite WW:Abwehr des Opfers eines \emph{Faustkampf}-Angriffs
 erhält genau die gleichen WM wie der erste WW:Abwehr
@@ -1104,12 +1248,43 @@ sofort, nicht erst in der folgenden Runde (laufende Zaubervorgänge
 werden abgebrochen). Für den genauen Dauer der resultierenden
 Wehrlosigkeit und Bewußtlosigkeit vgl. Abschnitt~\ref{timing}.
 
+\subsubsection{Kampfriemen}
+
+Die (westlichen) Kampfriemen können nicht in Verbindung mit
+\textbf{KiDo} benutzt werden. (Stattdessen werden \textbf{YoTenTori}
+benutzt, siehe Abschnitt \ref{yotentori}.) Die Behinderungen durch
+angelegte Kampfriemen entsprechen denen durch YoTenTori [KTP\,251].
+
+\subsubsection{Tonfa}
+
+Ein Kampfstab kann auch zur Abwehr von Tonfa-Angriffen eingesetzt
+werden.
+
+Das Tonfa gibt zwei unabhängige Zuschläge auf den WW:Abwehr: Zum einen
+bei hohem Erfolgswert gegen Nahkampfangriffe aus allen Richtungen
+(analog zum \emph{waffenlosen Kampf}, zum anderen den Erfolgswert für
+Tonfa abzüglich 5 gegen Angriffe von vorne und von der Seite des
+abwehrenden Tonfa (analog zum Kampfstab). Der letztere Zuschlag wird
+nur gewährt gegen Angriffe, gegen die auch ein Kampfstab verwendet
+werden kann. Beide Zuschläge addieren sich.
+
+Waffenrang und Rüstungsbonus sind die gleichen wie beim Kampf mit
+bloßen Händen.
+
+\subsubsection{YoTenTori}
+\label{yotentori}
+
+Analog zum Kampf mit \textbf{Kampfriemen} haben YoTenTori im
+Handgemenge keinen Effekt, d.\,h. die Figur kämpft im Handgemenge mit
+dem Erfolgs- und Schadenswert von \emph{waffenlosem Kampf}.
+
+Waffenrang und Rüstungsbonus sind die gleichen wie beim Kampf mit
+bloßen Händen.
 
 \subsubsection{Kombination spezieller Angriffsweisen}
 \label{kombi}
 
-\begin{tabular}{|p{16.5cm}|}
-  \hline
+\fbox{\parbox{0.98\textwidth}{%
   \textbf{Beispiel:} \emph{\small Beowulf beschleunigt sich magisch
     und stürmt dann seinen Gegnern entgegen. Er verbraucht dabei knapp
     90\,\%\ seiner Bewegungsweite, aber dies läßt ihm noch Gelegenheit
@@ -1121,9 +1296,8 @@ Wehrlosigkeit und Bewußtlosigkeit vgl. Abschnitt~\ref{timing}.
     sechs verschiedene Gegner, die er mit einer großen Portion Glück
     dann auch alle ins Jenseits befördern könnte. Und ach ja, diese
     Angriffe werden alle noch ein wenig erschwert, um konzentriert
-    abwehren zu können\dots}\\
-  \hline
-\end{tabular}
+    abwehren zu können\dots}
+}}
 
 Natürlich funktioniert das oben beschriebene Manöver so nicht. Leider
 wird das aus dem Regelwerk nicht sehr deutlich. Es gilt das
@@ -1148,32 +1322,32 @@ Die speziellen Angriffsweisen lassen sich in Gruppen einteilen:
   durchgeführter normaler Angriff davon nicht berührt. Solch ein
   Angriff kann weiterhin durch die speziellen Angriffsweisen aus
   Gruppe \ref{i:ersatz} ersetzt werden. Insbesondere gilt dies für die
-  beiden zuletzt genannten Möglichkeiten, die ja nur möglich sind,
-  wenn zunächst ein regulärer Angriff durchgeführt wird (wobei dieser
-  erste Angriff z.\,B. gezielt sein dürfte -- siehe aber spezielle
-  Anmerkungen zum beidhändigen Kampf und \emph{Fechten} [DFR\,140f]).
+  beiden zuletzt genannten Möglichkeiten, die ja erst möglich sind,
+  wenn zunächst ein regulärer Angriff (oder eine konzentrierte Abwehr)
+  durchgeführt wird (z.\,B. könnte nach einem gezielten Rapierangriff
+  ein Zusatzangriff mit \emph{Fechten} durchgeführt werden).
 \item \label{i:ersatz} Spezielle Angriffe, für die die Aktion 2d
-  [DFR\,220] (mit einer Nahkampfwaffe angreifen) gewählt werden muß,
-  wobei dann aber der übliche normale Angriff durch den speziellen
-  Angriff ersetzt wird: gezielter Angriff, Rundumschlag, Entwaffnen
-  (nur mit bestimmten Waffen möglich), Mehrfachangriff mit schneller
-  Waffe (z.\,B. NunChaku), Anwendung von \emph{Kampf in Dunkelheit},
-  \emph{beidhändigem Kampf} bzw. \emph{Kampf in
+  [DFR\,220] (\emph{mit einer Nahkampfwaffe angreifen}) gewählt werden
+  muß, wobei dann aber der übliche normale Angriff durch den
+  speziellen Angriff ersetzt wird: gezielter Angriff, Rundumschlag,
+  Entwaffnen (nur mit bestimmten Waffen möglich), Mehrfachangriff mit
+  schneller Waffe (z.\,B. NunChaku), Anwendung von \emph{Kampf in
+    Dunkelheit}, \emph{beidhändigem Kampf} bzw. \emph{Kampf in
     Schlachtreihe}. Angriffe, die nicht im Zuge von Aktion 2d
   durchgeführt werden (also z.\,B. aus Gruppe \ref{i:zusatz} oder
   \ref{i:aktion}), können daher nicht mit diesen Angriffsweisen
   kombiniert werden. Weniger offensichtlich ist, daß die
-  Angriffsweisen aus dieser Gruppe auch nicht \emph{miteinander}
+  Angriffsweisen aus dieser Gruppe auch \textbf{nicht miteinander}
   kombiniert werden können. Beispiele: Ein Rundumschlag kann nicht
   gezielt ausgeführt werden. Wenn ein beidhändiger Kämpfer im Dunkeln
   kämpft, muß er sich entscheiden, ob er einhändig \emph{Kampf in
     Dunkelheit} anwendet oder lieber mit \emph{beidhändigem Kampf}
   angreift, dafür aber die übliche WM-6 in Kauf nimmt.
 \item \label{i:aktion} Angriffe, die eine spezielle Aktionswahl nach
-  [DFR\,220f] erfordern: Konzentrierte Abwehr (2f), den Gegner zu Fall
-  bringen (2g), ein Handgemenge einleiten (2h). Diese Aktionen sind
-  einfach keine normalen Angriffe und können daher nicht durch
-  Angriffsweisen aus Gruppe \ref{i:ersatz} ersetzt
+  [DFR\,220f] erfordern: \emph{Konzentrierte Abwehr} (2f), \emph{den
+    Gegner zu Fall bringen} (2g), \emph{ein Handgemenge einleiten}
+  (2h). Diese Aktionen sind einfach keine normalen Angriffe und können
+  daher nicht durch Angriffsweisen aus Gruppe \ref{i:ersatz} ersetzt
   werden. Zusatzangriffe aus Gruppe \ref{i:zusatz} sind aber weiterhin
   möglich, wenn das ihre jeweilige Regel gestattet. Bei einer
   konzentrierten Abwehr gilt z.\,B. ausdrücklich, daß durch Einsatz
@@ -1182,14 +1356,13 @@ Die speziellen Angriffsweisen lassen sich in Gruppen einteilen:
   gestattet.
 \end{enumerate}
 
-Zu beachten ist, daß ein \emph{Sturmangriff} keine spezielle
-Angriffsweise im Sinne dieses Abschnitts ist. Jeder Nahkampfangriff,
-bei dem der Angreifer sich in der laufenden Runde mindestens 6\,m, aber
-höchstens die Hälfte seiner Bewegungsweite bewegt hat, zählt
-automatisch als Sturmangriff. Ähnliches gilt für Angriffe mit
-improvisierten und/oder unvertrauten Waffen. Hier gibt es keinerlei
-Einschränkungen bei der Anwendung spezieller Angriffstechniken aus den
-oben genannten Gruppen.
+Zu beachten ist, daß ein \textbf{Sturmangriff} keine spezielle
+Angriffsweise im Sinne dieses Abschnitts ist. Gemäß Abschnitt
+\ref{sturm} zählen automatisch Angriffe aus Gruppe \ref{i:ersatz} und
+\ref{i:aktion} als Sturmangriff, sobald die Voraussetzungen dafür
+erfüllt sind. Ähnliches gilt für Angriffe mit improvisierten und/oder
+unvertrauten Waffen. Hier gibt es keinerlei Einschränkungen bei der
+Anwendung spezieller Angriffstechniken aus den oben genannten Gruppen.
 
 Der Zauber \emph{Beschleunigen} verdoppelt prinzipiell die
 Handlungsmöglichkeiten, unbeschadet eventuell gewählter spezieller
@@ -1597,8 +1770,7 @@ Qualifikation, den Wert dieser Wertgegenst"ande zuverl"assig zu
 sch"atzen. In der Regel werden SpF durch ihre Unwissenheit recht hohe
 Wertverluste sowohl beim Kauf wie beim Verkauf erleiden.
 
-\begin{tabular}{|p{16.5cm}|}
-  \hline
+\fbox{\parbox{0.98\textwidth}{%
   \textbf{Beispiel:} \emph{Die Gruppe hat von ihrem letzten
     Abenteuer eine ganze Truhe mit GS mitgebracht. Bei einem
     Edelsteinh"andler kaufen sie f"ur die rund 10.000\,GS einen
@@ -1613,9 +1785,8 @@ Wertverluste sowohl beim Kauf wie beim Verkauf erleiden.
     zahlen. -- N"achstesmal sind die SpF kl"uger und ziehen einen
     unabh"angigen Experten zurate. Sie werden nicht mehr "ubers Ohr
     gehauen, aber der Experte verlangt f"ur seine Dienste eine
-    Pr"amie von 5\,\%\ des Sch"atzwertes.}\\
-  \hline
-\end{tabular}
+    Pr"amie von 5\,\%\ des Sch"atzwertes.}
+}}
 
 Es empfiehlt sich, derartige Situationen nur dann in dieser Weise
 auszuspielen, wenn es die Spielsituation verlangt. Ansonsten sollten
@@ -1678,12 +1849,11 @@ aber leider noch nicht ganz verschwunden (z.\,B. [DFR\,32], [ARK\,179],
 [BES\,323]). So ist jetzt etwas klarer, daß es natürlich auch Homo- und
 Bisexualit"at (und wohl auch Asexualit"at) gibt. Wenn derartige
 zwischenmenschliche Angelegenheiten regeltechnisch behandelt werden m"ussen,
-so geht der Spielleiter flexibel vor und vergibt passende WM auf entsprechende
+so geht der SpL flexibel vor und vergibt passende WM auf entsprechende
 W"urfe. Es ist immer m"oglich, da"s ein Charakter gegen seine bevorzugte
 sexuelle Orientierung handelt, wenn die Umst"ande entsprechend extrem sind.
 
-\begin{tabular}{|p{16.5cm}|}
-  \hline
+\fbox{\parbox{0.98\textwidth}{%
   \textbf{Beispiel:} \emph{Die schwarze Hexe
     Xenia macht sich an Ipak, den gutaussehenden Gl"ucksritter der
     Abenteurergruppe, heran. Sie hat vor, die Gruppe zu
@@ -1694,7 +1864,7 @@ sexuelle Orientierung handelt, wenn die Umst"ande entsprechend extrem sind.
     aussichtslos sein (ein Gl"ucksritter bleibt ein Gl"ucksritter
     und ist immer offen f"ur neuartige Erfahrungen, Xenia ist
     obendrein extrem gutaussehend und charismatisch), aber doch um
-    ein geh"origes Ma"s erschwert. Der Spielleiter entscheidet
+    ein geh"origes Ma"s erschwert. Der SpL entscheidet
     also, Ipak WM+8 auf seinen WW:psyZR zu gew"ahren. -- Nachdem
     Xenia von Ipak einen freundschaftlichen Korb erhalten hat,
     probiert sie es mit dem zweiten m"annlichen Mitglied der
@@ -1706,9 +1876,8 @@ sexuelle Orientierung handelt, wenn die Umst"ande entsprechend extrem sind.
     wenn Fares eigentlich heterosexuell ist (was aber aufgrund des
     "uberzeugten Z"olibats relativ unwichtig ist). Eine tiefe
     "Uberzeugung wiegt genauso schwer wie eine biologische oder
-    psychische Veranlagung.}\\
-  \hline
-\end{tabular}
+    psychische Veranlagung.}
+}}
 
 \appendix
 
@@ -1836,9 +2005,7 @@ auf diesen beiden Achsen eingeordnet sind.
 
 \end{document}
 
-%\begin{tabular}{|p{16.5cm}|}
-%  \hline
-%  \textbf{Beispiel:} \emph{}\\
-%  \hline
-%\end{tabular}
 
+% \fbox{\parbox{0.98\textwidth}{%
+%   \textbf{Beispiel:} \emph{
+% }}}
